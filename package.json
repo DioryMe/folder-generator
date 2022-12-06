@@ -1,0 +1,36 @@
+{
+  "name": "@diograph/folder-generator",
+  "version": "0.0.1",
+  "description": "Generates diory from folder",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "diograph-js": "0.0.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@types/sharp": "*",
+    "@types/uuid": "^8.3.4",
+    "jest": "^27.5.0",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "yarn build --watch",
+    "prettier": "prettier --write .",
+    "test": "jest --verbose",
+    "test-watch": "jest --watch"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100,
+    "trailingComma": "all"
+  }
+}
