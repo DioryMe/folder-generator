@@ -1,0 +1,53 @@
+{
+  "name": "@diograph/folder-generator",
+  "version": "0.0.1",
+  "description": "Generates diory from folder",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "yarn build --watch",
+    "prettier": "prettier --write .",
+    "test": "jest --verbose",
+    "test-watch": "jest --watch",
+    "prepare": "yarn test && yarn build",
+    "publish": "yarn prettier && yarn build && yarn version && npm publish"
+  },
+  "dependencies": {
+    "@diograph/diograph": "^0.0.2-rc7",
+    "@diograph/file-generator": "^0.0.5-rc7",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@types/sharp": "*",
+    "@types/uuid": "^8.3.4",
+    "jest": "^27.5.0",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100,
+    "trailingComma": "all"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "dist",
+      "node_modules"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!multiformats)"
+    ],
+    "transform": {
+      "node_modules/multiformats/.+\\.(j|t)sx?$": "babel-jest"
+    }
+  }
+}
