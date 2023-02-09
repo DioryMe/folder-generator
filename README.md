@@ -11,13 +11,10 @@ yarn add @diograph/folder-generator
 ## Usage
 
 ```
-import { FolderDiory } from '@diograph/folder-generator'
+import { generateDiograph } from '@diograph/folder-generator'
 
-const folderDiory = new FolderDiory.generate(folderPath)
-console.log('Hello Folder!', folderDiory.toObject())
-
-const folderDiograph = folderDiory.generateDiograph()
-console.log('Hello Folder!', folderDiograph.toObject())
+const diograph = generateDiograph(folderPath)
+console.log('Hello diograph!', diograph.toObject())
 ```
 
 ## Development
@@ -32,4 +29,12 @@ Run unit tests in the background:
 
 ```
 yarn test-watch
+```
+
+## Publish
+
+Create new version and publish to npm:
+
+```
+yarn publish
 ```

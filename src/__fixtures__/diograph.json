@@ -1,0 +1,112 @@
+{
+  "/": {
+    "id": "folder-uuid",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "folder-uuid": {
+    "created": "some-birthtime",
+    "date": "some-birthtime",
+    "id": "folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": [
+      {
+        "id": "some-file-diory-id1",
+        "path": "image-with-24-hour.jpg"
+      },
+      {
+        "id": "some-file-diory-id2",
+        "path": "some-document.docx"
+      },
+      {
+        "id": "some-file-diory-id3",
+        "path": "some-document.odt"
+      },
+      {
+        "id": "some-file-diory-id4",
+        "path": "some-document.pdf"
+      },
+      {
+        "id": "some-file-diory-id5",
+        "path": "some-image.jpg"
+      },
+      {
+        "id": "some-file-diory-id6",
+        "path": "some-music.mp3"
+      },
+      {
+        "id": "some-file-diory-id7",
+        "path": "some-text.txt"
+      },
+      {
+        "id": "some-file-diory-id8",
+        "path": "some-video.mp4"
+      },
+      {
+        "id": "sub-folder-uuid",
+        "path": "some-sub-folder"
+      }
+    ],
+    "modified": "some-mtime",
+    "text": "example-folder"
+  },
+  "some-file-diory-id0": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id0",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "some-file-diory-id1": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id1",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "some-file-diory-id2": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id2",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "some-file-diory-id3": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id3",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "some-file-diory-id4": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id4",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "some-file-diory-id5": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id5",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "some-file-diory-id6": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id6",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "some-file-diory-id7": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id7",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "some-file-diory-id8": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id8",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "sub-folder-uuid": {
+    "created": "some-birthtime",
+    "date": "some-birthtime",
+    "id": "sub-folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": [
+      {
+        "id": "some-file-diory-id0",
+        "path": "some-sub-folder-image.jpg"
+      }
+    ],
+    "modified": "some-mtime",
+    "text": "some-sub-folder"
+  }
+}

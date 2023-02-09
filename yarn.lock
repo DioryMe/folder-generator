@@ -291,22 +291,23 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@diograph/diograph@^0.0.2-rc7":
-  version "0.0.2-rc7"
-  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.0.2-rc7.tgz#895a670f7a93317358ae647fab50dd7b4253fb8e"
-  integrity sha512-2wyNcrl2nIWVBh1YFHkg83Z8KJIQt+jmDn9KKJOQ4aXIaFysk8ndaH5Ny2kURxF2MKk8da6gzW3YTzLgJnhorQ==
+"@diograph/diograph@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.1.1.tgz#2ee1a4970e9fbc9b2148623e27a05b91fef3e80d"
+  integrity sha512-AyQaVjhxEu4vootrDuT20jkw/FepRri91mMI4pvTuFLI0F6Dvz3MP06eWYGw9d+NjwwA8AF7gVoapJPd176gnA==
   dependencies:
     uuid "^8.3.2"
 
-"@diograph/file-generator@^0.0.5-rc7":
-  version "0.0.5-rc7"
-  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.0.5-rc7.tgz#a9ce7fb69edcd85a12addee72d7f313ed7eca6cd"
-  integrity sha512-sT3yrObR2TKAcWyBoBJvjLa5Rw7FL0cgOmqzcuk1Mo2levyW6FE7oYS4T+RsQL+DdvwMgJCkUHJ5cYnRu7E7cw==
+"@diograph/file-generator@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.1.tgz#d934038ceb722e1ba4ea559d2e3bf4c779c9600f"
+  integrity sha512-998BYac4JOziEeLpgNQC9KWY1RHC7RnE3IgxfyxAIRrdyg575trFqtB5SjNvcl7GiB9otkBb+NTaQ489ssmcXw==
   dependencies:
-    exifreader "^4.1.0"
+    "@diograph/diograph" "^0.1.1"
+    exifreader "^4.8.1"
     file-type "^16.4.0"
-    multiformats "^10.0.2"
-    sharp "*"
+    multiformats "^9.6.0"
+    sharp "0.31.2"
     uuid "^9.0.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
@@ -664,10 +665,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@xmldom/xmldom@^0.7.8":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.9.tgz#7f9278a50e737920e21b297b8a35286e9942c056"
-  integrity sha512-yceMpm/xd4W2a85iqZyO09gTnHvXF6pyiWjD2jcOJs7hRoZtNNOO1eJlhHj1ixA+xip2hOyGn+LgcvLCMo5zXA==
+"@xmldom/xmldom@^0.8.10":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.10.tgz#a1337ca426aa61cef9fe15b5b28e340a72f6fa99"
+  integrity sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"
@@ -1212,12 +1213,12 @@ execa@^5.0.0:
     signal-exit "^3.0.3"
     strip-final-newline "^2.0.0"
 
-exifreader@^4.1.0:
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/exifreader/-/exifreader-4.9.1.tgz#e40235845914f42aaf717ffede8367c4f3698e76"
-  integrity sha512-lcVG6VuSkPVHdmM6HybcVWaE8iO4Qq68qFPCRM6U3kz0JODqw4mjMySJ1nZSHfAnrfsIYGfN9A2vh96b3LAF1g==
+exifreader@^4.8.1:
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/exifreader/-/exifreader-4.16.0.tgz#e07b94bb4fc3682c2d3ec3961aa0139f147bc97c"
+  integrity sha512-Ivd4lr/EZ2lPHBrAFsO4C90OUKihQWJfsUjGAn7pAuRcXs/RqdENFQLIRQDVLn+KFE5GuSN8q5AdRIDPT94QUQ==
   optionalDependencies:
-    "@xmldom/xmldom" "^0.7.8"
+    "@xmldom/xmldom" "^0.8.10"
 
 exit@^0.1.2:
   version "0.1.2"
@@ -2140,10 +2141,10 @@ ms@2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-multiformats@^10.0.2:
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-10.0.3.tgz#d4147d01f9a31271c6fb5d24adf9b01f9e656bba"
-  integrity sha512-K2yGSmstS/oEmYiEIieHb53jJCaqp4ERPDQAYrm5sV3UUrVDZeshJQCK6GHAKyIGufU1vAcbS0PdAAZmC7Tzcw==
+multiformats@^9.6.0:
+  version "9.9.0"
+  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.9.0.tgz#c68354e7d21037a8f1f8833c8ccd68618e8f1d37"
+  integrity sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==
 
 napi-build-utils@^1.0.1:
   version "1.0.2"
@@ -2472,10 +2473,10 @@ semver@^6.0.0, semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-sharp@*:
-  version "0.31.3"
-  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.31.3.tgz#60227edc5c2be90e7378a210466c99aefcf32688"
-  integrity sha512-XcR4+FCLBFKw1bdB+GEhnUNXNXvnt0tDo4WsBsraKymuo/IAuPuCBVAL2wIkUw2r/dwFW5Q5+g66Kwl2dgDFVg==
+sharp@0.31.2:
+  version "0.31.2"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.31.2.tgz#a8411c80512027f5a452b76d599268760c4e5dfa"
+  integrity sha512-DUdNVEXgS5A97cTagSLIIp8dUZ/lZtk78iNVZgHdHbx1qnQR7JAHY0BnXnwwH39Iw+VKhO08CTYhIg0p98vQ5Q==
   dependencies:
     color "^4.2.3"
     detect-libc "^2.0.1"

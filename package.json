@@ -1,10 +1,10 @@
 {
   "name": "@diograph/folder-generator",
-  "version": "0.0.1",
-  "description": "Generates diory from folder",
+  "version": "0.0.1-rc3",
+  "description": "Generates diograph from folder",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "",
+  "author": "Olli-Pekka Pohjola <op@diory.me>, Jouni Alanen <jouni@diory.me>",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
@@ -12,12 +12,12 @@
     "prettier": "prettier --write .",
     "test": "jest --verbose",
     "test-watch": "jest --watch",
-    "prepare": "yarn test && yarn build",
-    "publish": "yarn prettier && yarn build && yarn version && npm publish"
+    "prepare": "yarn build",
+    "publish": "yarn version && yarn build && npm publish"
   },
   "dependencies": {
-    "@diograph/diograph": "^0.0.2-rc7",
-    "@diograph/file-generator": "^0.0.5-rc7",
+    "@diograph/diograph": "^0.1.1",
+    "@diograph/file-generator": "^0.1.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
@@ -49,5 +49,9 @@
     "transform": {
       "node_modules/multiformats/.+\\.(j|t)sx?$": "babel-jest"
     }
-  }
+  },
+  "keywords": [
+    "diory",
+    "diograph"
+  ]
 }
