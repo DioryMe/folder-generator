@@ -1,10 +1,10 @@
 {
   "name": "@diograph/folder-generator",
-  "version": "0.0.1",
+  "version": "0.0.1-rc2",
   "description": "Generates diory from folder",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "",
+  "author": "Olli-Pekka Pohjola <op@diory.me>, Jouni Alanen <jouni@diory.me>",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
@@ -49,5 +49,9 @@
     "transform": {
       "node_modules/multiformats/.+\\.(j|t)sx?$": "babel-jest"
     }
-  }
+  },
+  "keywords": [
+    "diory",
+    "diograph"
+  ]
 }
