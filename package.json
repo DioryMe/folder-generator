@@ -6,8 +6,18 @@
   "types": "dist/index.d.ts",
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "yarn build --watch",
+    "prettier": "prettier --write .",
+    "test": "jest --verbose",
+    "test-watch": "jest --watch",
+    "prepare": "yarn test && yarn build",
+    "publish": "yarn prettier && yarn build && yarn version && npm publish"
+  },
   "dependencies": {
-    "diograph-js": "0.0.3",
+    "@diograph/diograph": "^0.0.2-rc7",
+    "@diograph/file-generator": "^0.0.5-rc7",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
@@ -19,18 +29,25 @@
     "ts-jest": "^27.1.3",
     "typescript": "^4.5.5"
   },
-  "scripts": {
-    "build": "tsc",
-    "build-watch": "yarn build --watch",
-    "prettier": "prettier --write .",
-    "test": "jest --verbose",
-    "test-watch": "jest --watch"
-  },
   "prettier": {
     "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
     "printWidth": 100,
     "trailingComma": "all"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "dist",
+      "node_modules"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!multiformats)"
+    ],
+    "transform": {
+      "node_modules/multiformats/.+\\.(j|t)sx?$": "babel-jest"
+    }
   }
 }
