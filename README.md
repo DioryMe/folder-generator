@@ -13,7 +13,7 @@ yarn add @diograph/folder-generator
 ```
 import { generateDiograph } from '@diograph/folder-generator'
 
-const diograph = generateDiograph(folderPath)
+const diograph = await generateDiograph(folderPath)
 console.log('Hello diograph!', diograph.toObject())
 ```
 
