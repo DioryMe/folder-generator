@@ -15,8 +15,7 @@
     "prettier": "prettier --write .",
     "test": "jest --verbose",
     "test-watch": "jest --watch",
-    "prepare": "yarn build",
-    "publish": "yarn version && yarn build && npm publish"
+    "prepare": "yarn build"
   },
   "dependencies": {
     "@diograph/diograph": "^0.1.1",
