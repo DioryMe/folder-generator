@@ -1,6 +1,6 @@
 {
   "name": "@diograph/folder-generator",
-  "version": "0.1.1-rc2",
+  "version": "0.1.1-rc3",
   "description": "Generates diograph from folder",
   "license": "MIT",
   "author": "Olli-Pekka Pohjola <op@diory.me>, Jouni Alanen <jouni@diory.me>",
