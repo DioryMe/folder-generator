@@ -1,5 +1,6 @@
 import { join } from 'path'
-import { Diograph, IDiograph, IDiory } from '@diograph/diograph'
+import { Diograph } from '@diograph/diograph'
+import { IDiograph, IDiory } from '@diograph/diograph/types'
 import { generateDiory } from '@diograph/file-generator'
 
 import { IFolder } from './getPaths'

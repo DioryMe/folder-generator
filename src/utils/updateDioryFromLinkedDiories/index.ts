@@ -1,4 +1,4 @@
-import { IDiory, ILinkObject } from '@diograph/diograph'
+import { IDiory, ILinkObject } from '@diograph/diograph/types'
 
 import { ifDefined } from '../ifDefined'
 

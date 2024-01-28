@@ -1,4 +1,4 @@
-import { IDiograph } from '@diograph/diograph'
+import { IDiograph } from '@diograph/diograph/types'
 
 import { getFolders, IFolder } from './utils/getPaths'
 import { generateDiographFromFolders } from './utils/generateDiographFromFolders'

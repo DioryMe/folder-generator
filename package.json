@@ -18,7 +18,7 @@
     "prepare": "yarn build"
   },
   "dependencies": {
-    "@diograph/diograph": "^0.1.1",
+    "@diograph/diograph": "next",
     "@diograph/file-generator": "next",
     "uuid": "^8.3.2"
   },
