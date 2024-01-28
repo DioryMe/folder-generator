@@ -2,10 +2,13 @@
   "name": "@diograph/folder-generator",
   "version": "0.1.0",
   "description": "Generates diograph from folder",
+  "license": "MIT",
+  "author": "Olli-Pekka Pohjola <op@diory.me>, Jouni Alanen <jouni@diory.me>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Olli-Pekka Pohjola <op@diory.me>, Jouni Alanen <jouni@diory.me>",
-  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "build-watch": "yarn build --watch",
