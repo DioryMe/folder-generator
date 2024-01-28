@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@diograph/diograph": "^0.1.1",
-    "@diograph/file-generator": "^0.1.1",
+    "@diograph/file-generator": "next",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

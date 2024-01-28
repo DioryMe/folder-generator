@@ -298,12 +298,14 @@
   dependencies:
     uuid "^8.3.2"
 
-"@diograph/file-generator@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.1.tgz#d934038ceb722e1ba4ea559d2e3bf4c779c9600f"
-  integrity sha512-998BYac4JOziEeLpgNQC9KWY1RHC7RnE3IgxfyxAIRrdyg575trFqtB5SjNvcl7GiB9otkBb+NTaQ489ssmcXw==
+"@diograph/file-generator@next":
+  version "0.1.2-rc3"
+  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.2-rc3.tgz#b165ddcbef3d75ef51e72437172bf36dcfbbe2b1"
+  integrity sha512-bFakrfqjSnsqUpar/10WyhV2ag2ZmglmYiLwjOD1CEZVTeLADdB3vblYuTwvjEGotbszFW8SIoqrfyViDbB6LA==
   dependencies:
     "@diograph/diograph" "^0.1.1"
+    "@types/sharp" "0.31.0"
+    "@types/uuid" "^9.0.0"
     exifreader "^4.8.1"
     file-type "^16.4.0"
     multiformats "^9.6.0"
@@ -643,6 +645,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/sharp@0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@types/sharp/-/sharp-0.31.0.tgz#c4af03a7e1d126f0d428a265e126fabd86ab6d0f"
+  integrity sha512-nwivOU101fYInCwdDcH/0/Ru6yIRXOpORx25ynEOc6/IakuCmjOAGpaO5VfUl4QkDtUC6hj+Z2eCQvgXOioknw==
+  dependencies:
+    "@types/node" "*"
+
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
@@ -652,6 +661,11 @@
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
   integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
+
+"@types/uuid@^9.0.0":
+  version "9.0.8"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-9.0.8.tgz#7545ba4fc3c003d6c756f651f3bf163d8f0f29ba"
+  integrity sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==
 
 "@types/yargs-parser@*":
   version "21.0.0"
