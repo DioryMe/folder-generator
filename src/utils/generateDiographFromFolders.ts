@@ -29,7 +29,11 @@ export const generateDiographFromFolders = async (
       fileNames.map(async (fileName: string) => {
         const folderPath = join(rootPath, path)
         const diory = await generateDiory(folderPath, fileName)
-        diograph.addDiory(diory)
+        try {
+          diograph.addDiory(diory)
+        } catch (e) {
+          console.error('diory', e)
+        }
 
         return [fileName, diory]
       }),
@@ -42,7 +46,11 @@ export const generateDiographFromFolders = async (
       ...pathAndSubFolderDiories,
     ])
 
-    diograph.addDiory(folderDiory)
+    try {
+      diograph.addDiory(folderDiory)
+    } catch (e) {
+      console.error('folderDiory', e)
+    }
   }
 
   const rootId = _folderPathDioryIdMap['/']
