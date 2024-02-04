@@ -15,11 +15,11 @@
     "prettier": "prettier --write .",
     "test": "jest --verbose",
     "test-watch": "jest --watch",
-    "prepare": "yarn build"
+    "prepare": "yarn prettier && yarn test && yarn build"
   },
   "dependencies": {
-    "@diograph/diograph": "next",
-    "@diograph/file-generator": "next",
+    "@diograph/diograph": "^0.2.2-rc2",
+    "@diograph/file-generator": "^0.1.2-rc4",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
