@@ -1,4 +1,4 @@
-import { IDioryObject } from '@diograph/diograph/types'
+import { IDioryObject } from '@diograph/diograph'
 
 function getAverage(array: any[] = []): number | undefined {
   return array.length

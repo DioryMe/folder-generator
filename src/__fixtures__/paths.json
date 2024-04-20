@@ -1,0 +1,13 @@
+{
+  "folder-uuid": "/",
+  "some-file-diory-id0": "/some-sub-folder/some-sub-folder-image.jpg",
+  "some-file-diory-id1": "/image-with-24-hour.jpg",
+  "some-file-diory-id2": "/some-document.docx",
+  "some-file-diory-id3": "/some-document.odt",
+  "some-file-diory-id4": "/some-document.pdf",
+  "some-file-diory-id5": "/some-image.jpg",
+  "some-file-diory-id6": "/some-music.mp3",
+  "some-file-diory-id7": "/some-text.txt",
+  "some-file-diory-id8": "/some-video.mp4",
+  "sub-folder-uuid": "/some-sub-folder"
+}
