@@ -1,20 +1,14 @@
-import { join } from 'path'
-import { Diory } from '@diograph/diograph'
-import { IDiory } from '@diograph/diograph'
+import { join } from 'path-browserify'
+import { Diory, IDiory } from '@diograph/diograph'
+import { IDataClient } from '@diograph/local-client'
 
-import { getText } from './text'
 import { getImage } from './image'
-import { getCreated } from './created'
-import { getModified } from './modified'
 
-export function generateFolderDiory(rootPath: string, path: string): IDiory {
-  const folderPath = join(rootPath, path)
+export function generateFolderDiory(rootUrl: string, path: string, client: IDataClient): IDiory {
+  const folderUrl = join(rootUrl, path)
 
-  const text = getText(folderPath)
+  const { name, created, modified } = client.getMetadata(folderUrl)
   const image = getImage()
-  const date = getCreated(folderPath)
-  const created = getCreated(folderPath)
-  const modified = getModified(folderPath)
 
-  return new Diory({ text, image, date, created, modified })
+  return new Diory({ text: name, image, date: created, created, modified })
 }

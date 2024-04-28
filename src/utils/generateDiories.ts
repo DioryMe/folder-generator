@@ -1,13 +1,15 @@
-import { join } from 'path'
+import { join } from 'path-browserify'
 import { generateDiory } from '@diograph/file-generator'
+import { IDataClient } from '@diograph/local-client'
 
-import { IDiories, IFolderPath } from '../../types'
+import { IDiories, IFolderPath } from '../types'
 
 import { generateFolderDiory } from '../folderDiory'
 
 export const generateDiories = async (
   rootPath: string,
   folders: IFolderPath[],
+  client: IDataClient,
 ): Promise<IDiories> => {
   const diories: IDiories = {}
 
@@ -18,11 +20,11 @@ export const generateDiories = async (
         fileNames.map(async (fileName: string) => {
           const folderPath = join(rootPath, path)
           const dioryPath = join(path, fileName)
-          diories[dioryPath] = await generateDiory(folderPath, fileName)
+          diories[dioryPath] = await generateDiory(folderPath, fileName, client)
         }),
       )
 
-      diories[path] = generateFolderDiory(rootPath, path)
+      diories[path] = generateFolderDiory(rootPath, path, client)
       return
     }),
   )

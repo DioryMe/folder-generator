@@ -46,22 +46,22 @@
   },
   "sub-folder-uuid": {
     "id": "sub-folder-uuid",
-    "text": "some-sub-folder",
+    "text": "example-folder",
     "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
-    "date": "some-birthtime",
+    "date": "2022-01-01T00:00:00.000Z",
     "links": [
       {
         "id": "some-file-diory-id0"
       }
     ],
-    "created": "some-birthtime",
-    "modified": "some-mtime"
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2023-01-01T00:00:00.000Z"
   },
   "folder-uuid": {
     "id": "folder-uuid",
     "text": "example-folder",
     "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
-    "date": "some-birthtime",
+    "date": "2022-01-01T00:00:00.000Z",
     "links": [
       {
         "id": "sub-folder-uuid"
@@ -91,8 +91,8 @@
         "id": "some-file-diory-id8"
       }
     ],
-    "created": "some-birthtime",
-    "modified": "some-mtime"
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2023-01-01T00:00:00.000Z"
   },
   "/": {
     "id": "folder-uuid",
