@@ -1,13 +1,13 @@
-const { join } = require('path')
-
+const { join } = require('path-browserify')
 import { getFolderPaths } from './getFolderPaths'
+import { LocalClient } from '@diograph/local-client'
 
 describe('getFolderPaths', () => {
   describe('given root folder path', () => {
     it('returns all subfolder paths with file and subfolder names', async () => {
       const folderPath = join(__dirname, '../__fixtures__/example-folder')
 
-      const folderPaths = await getFolderPaths(folderPath)
+      const folderPaths = await getFolderPaths(folderPath, '/', new LocalClient())
 
       expect(folderPaths).toMatchInlineSnapshot(`
         Array [

@@ -1,5 +1,5 @@
-import { join } from 'path'
-import { IDiories } from '../../types'
+const { join } = require('path-browserify')
+import { IDiories } from '../types'
 
 export const getDiories = (rootPath: string, names: string[], diories: IDiories) =>
   names.map((name) => {

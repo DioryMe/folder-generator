@@ -1,32 +1,29 @@
-import { promises, Dirent } from 'fs'
-import { join } from 'path'
+import { join } from 'path-browserify'
+import { IDataClient } from '@diograph/local-client'
 
-import { IFolderPath } from '../../types'
-
-const isValidDirent = (dirent: Dirent) => !dirent.name.startsWith('.')
+import { IFolderPath } from '../types'
 
 export async function getFolderPaths(
-  rootPath: string,
+  rootUrl: string,
   folderPath = '/',
+  client: IDataClient,
 ): Promise<Array<IFolderPath>> {
-  const dirents: Dirent[] = await promises.readdir(join(rootPath, folderPath), {
-    withFileTypes: true,
-  })
-  const validDirents = dirents.filter(isValidDirent)
-  const fileDirents = validDirents.filter((dirent) => !dirent.isDirectory())
-  const folderDirents = validDirents.filter((dirent) => dirent.isDirectory())
+  const folderUrl = join(rootUrl, folderPath)
+  const subFolderNames = await client.getFolderNames(folderUrl)
+  const fileNames = await client.getFileNames(folderUrl)
 
   const subFolders: IFolderPath[][] = await Promise.all(
-    folderDirents.map(async (dirent: Dirent) => {
-      const subfolderPath: string = join(folderPath, dirent.name)
-      return getFolderPaths(rootPath, subfolderPath)
+    subFolderNames.map(async (subFolderName: string) => {
+      const subfolderPath: string = join(folderPath, subFolderName)
+      return getFolderPaths(rootUrl, subfolderPath, client)
     }),
   )
 
-  const currentFolder: IFolderPath = {
-    path: folderPath,
-    fileNames: fileDirents.map(({ name }) => name),
-    subFolderNames: folderDirents.map(({ name }) => name),
-  }
-  return subFolders.flat().concat([currentFolder])
+  return subFolders.flat().concat([
+    {
+      path: folderPath,
+      fileNames,
+      subFolderNames,
+    },
+  ])
 }

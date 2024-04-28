@@ -1,7 +1,7 @@
 import { IDiories, IFolderPath } from '../types'
 
-import { updateFolderDiory } from './updateFolderDiory'
-import { getDiories } from './utils/getDiories'
+import { updateFolderDiory } from '../updateFolderDiory'
+import { getDiories } from './getDiories'
 
 export const updateFolderDiories = (diories: IDiories, folderPaths: IFolderPath[]): void => {
   folderPaths.forEach(({ path, subFolderNames = [], fileNames = [] }) => {
