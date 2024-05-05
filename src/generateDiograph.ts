@@ -1,5 +1,5 @@
 import { IDiograph } from '@diograph/diograph'
-import { IDataClient } from '@diograph/local-client'
+import { IDataClient } from '@diory/client-js'
 
 import { IDiories, IFolderPath, IPaths } from './types'
 

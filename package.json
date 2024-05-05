@@ -1,6 +1,6 @@
 {
   "name": "@diograph/folder-generator",
-  "version": "0.3.0-rc1",
+  "version": "0.3.0-rc2",
   "description": "Generates diograph from folder",
   "license": "MIT",
   "author": "Olli-Pekka Pohjola <op@diory.me>, Jouni Alanen <jouni@diory.me>",
@@ -19,8 +19,9 @@
   },
   "dependencies": {
     "@diograph/diograph": "0.3.0-rc12",
-    "@diograph/file-generator": "^0.1.2-rc10",
+    "@diograph/file-generator": "^0.1.2-rc12",
     "@diograph/local-client": "^0.3.0-rc4",
+    "@diory/client-js": "^0.2.0-rc7",
     "path-browserify": "^1.0.1",
     "uuid": "^8.3.2"
   },
