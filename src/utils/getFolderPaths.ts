@@ -1,5 +1,5 @@
 import { join } from 'path-browserify'
-import { IDataClient } from '@diograph/local-client'
+import { IDataClient } from '@diory/client-js'
 
 import { IFolderPath } from '../types'
 
