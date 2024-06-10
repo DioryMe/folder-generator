@@ -291,36 +291,166 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@diograph/diograph@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.1.1.tgz#2ee1a4970e9fbc9b2148623e27a05b91fef3e80d"
-  integrity sha512-AyQaVjhxEu4vootrDuT20jkw/FepRri91mMI4pvTuFLI0F6Dvz3MP06eWYGw9d+NjwwA8AF7gVoapJPd176gnA==
+"@diograph/diograph@0.3.0-rc11":
+  version "0.3.0-rc11"
+  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.3.0-rc11.tgz#5785f9423371cfada2f101374b52fca8721dd7e2"
+  integrity sha512-IBDJzUlxZOiyVs9E6uNiBKZlBrtrj84u59aKMU2tvQ/r1hQ2ZCmEJJYRXgqoaQCofX1DHmcpWIH+FAnqo6GqcQ==
   dependencies:
+    ajv "^8.12.0"
     uuid "^8.3.2"
 
-"@diograph/diograph@next":
-  version "0.2.1-rc3"
-  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.2.1-rc3.tgz#1cb803fea592801d1b6743b0da4372c763ac717c"
-  integrity sha512-aMU4uUYScWyoL5P827LCsXIyyU5jI2oFwB6h8/1BPoXdqFOg+1K36heMfYkBbk6/4JxRDsz28gG36MVOKTkicg==
+"@diograph/diograph@0.3.0-rc12":
+  version "0.3.0-rc12"
+  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.3.0-rc12.tgz#093908480a0cd7bc774438dc6dd3ec8d13d98758"
+  integrity sha512-tEU7DWmEv+OKEbmBGj7Xk0RutSpZTP/YLLnXVrVlpXVIYqLvp0ggZWpGwEzLt5Ri1tOfCtJm5ZBhcNrz5BgaEA==
   dependencies:
-    "@types/path-browserify" "^1.0.0"
-    "@types/uuid" "8.3.2"
-    path-browserify "^1.0.1"
-    uuid "8.3.2"
+    ajv "^8.12.0"
+    uuid "^8.3.2"
 
-"@diograph/file-generator@next":
-  version "0.1.2-rc3"
-  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.2-rc3.tgz#b165ddcbef3d75ef51e72437172bf36dcfbbe2b1"
-  integrity sha512-bFakrfqjSnsqUpar/10WyhV2ag2ZmglmYiLwjOD1CEZVTeLADdB3vblYuTwvjEGotbszFW8SIoqrfyViDbB6LA==
+"@diograph/diograph@0.3.0-rc14":
+  version "0.3.0-rc14"
+  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.3.0-rc14.tgz#5ad19f36d1917a927bc575428fe3bb33f3618841"
+  integrity sha512-6L6DvTuDsrJF/jS+Z8vHVTjrY48AAgg9NrggEIKFz3Yxjh0IOiEl14GyY8bU5Pu1YOCAItgBnrGAjaR3kk23UA==
   dependencies:
-    "@diograph/diograph" "^0.1.1"
-    "@types/sharp" "0.31.0"
-    "@types/uuid" "^9.0.0"
+    ajv "^8.12.0"
+    uuid "^8.3.2"
+
+"@diograph/file-generator@0.1.2-rc8":
+  version "0.1.2-rc8"
+  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.2-rc8.tgz#049f0912962f969c525df87efbe2ab0d534bdceb"
+  integrity sha512-iCBGMpVNZx1SCi0vIOQxwZk/0tJrAEkklie+luYfReD6rw36j+SxwgWF6HErU9V7kGDR74vMOKz0xLZoicr5Dw==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc11"
     exifreader "^4.8.1"
     file-type "^16.4.0"
     multiformats "^9.6.0"
     sharp "0.31.2"
     uuid "^9.0.0"
+
+"@diograph/file-generator@^0.1.2-rc10":
+  version "0.1.2-rc10"
+  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.2-rc10.tgz#ffd821702f0f4b4e936baaf1b0618e88c0913386"
+  integrity sha512-BAVKFwDpH0dNIJTIMbouXii2oNQf/hM3EpCfWmdTZBH5WYbhRW/oEPGXbHoo7+vZ1ZuSScGuD5G7PsE+iKuzpQ==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc11"
+    "@diograph/file-generator" "^0.1.2-rc9"
+    "@diograph/local-client" "^0.3.0-rc4"
+    "@types/path-browserify" "^1.0.2"
+    exifreader "^4.8.1"
+    multiformats "^9.6.0"
+    path-browserify "^1.0.1"
+    sharp "0.31.2"
+    uuid "^9.0.0"
+
+"@diograph/file-generator@^0.1.2-rc12":
+  version "0.1.2-rc12"
+  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.2-rc12.tgz#710ba974634c28bc4b5646c5b0896bab64dc01f0"
+  integrity sha512-B31updpAxt1YQfPIvPY4XvBVM/qNfJ3NRQGMRLCUlYMdHyeDtJ8jqmHKsDgqTgzwdsITLs3YXFEPLg13P0Qe3A==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc11"
+    "@diograph/file-generator" "^0.1.2-rc9"
+    "@diograph/local-client" "^0.3.0-rc6"
+    "@diory/client-js" "^0.2.0-rc7"
+    "@types/path-browserify" "^1.0.2"
+    exifreader "^4.8.1"
+    multiformats "^9.6.0"
+    path-browserify "^1.0.1"
+    uuid "^9.0.0"
+
+"@diograph/file-generator@^0.1.2-rc9":
+  version "0.1.2-rc9"
+  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.2-rc9.tgz#d57739748187457777f5a278c4598590e5cda16f"
+  integrity sha512-wzOsoVEmV26RHVY1c3JucZm0XsgIn7cyU/mNFD1K0L60dtZjo2JByAHSJZItlNWfbukSem78yZUPTs6LqS4xCA==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc11"
+    "@diograph/local-client" "^0.3.0-rc3"
+    "@types/path-browserify" "^1.0.2"
+    exifreader "^4.8.1"
+    file-type "^16.4.0"
+    multiformats "^9.6.0"
+    path-browserify "^1.0.1"
+    sharp "0.31.2"
+    uuid "^9.0.0"
+
+"@diograph/folder-generator@^0.2.0-rc1":
+  version "0.2.0-rc1"
+  resolved "https://registry.yarnpkg.com/@diograph/folder-generator/-/folder-generator-0.2.0-rc1.tgz#4da93f3bca6789a90837af7fbc04899f8f4ab047"
+  integrity sha512-4E80Q2d8NgKRjKzIa7y+Vg53ZvZh6pWWL9AqWUqZVFYBP6s+wwnhlXfldGqRAyfSjFfdx6s2ewHlHrXYxIbShA==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc12"
+    "@diograph/file-generator" "0.1.2-rc8"
+    uuid "^8.3.2"
+
+"@diograph/folder-generator@^0.3.0-rc1":
+  version "0.3.0-rc2"
+  resolved "https://registry.yarnpkg.com/@diograph/folder-generator/-/folder-generator-0.3.0-rc2.tgz#20e00a8d8a3adc94754d00f0b5c223d519ae3d2d"
+  integrity sha512-GJTlMMX9LJ6BNl+vCuaikq00SoGUr9ovvdTY5yJM/SPBZ3mU9tjMPls6CRiwZQnuHiXRnFawZq0+HJGs3iEsBw==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc12"
+    "@diograph/file-generator" "^0.1.2-rc10"
+    "@diograph/local-client" "^0.3.0-rc4"
+    path-browserify "^1.0.1"
+    uuid "^8.3.2"
+
+"@diograph/local-client@^0.3.0-rc3":
+  version "0.3.0-rc3"
+  resolved "https://registry.yarnpkg.com/@diograph/local-client/-/local-client-0.3.0-rc3.tgz#5eaf90f56debace42c2b1ee855e094d11216fefa"
+  integrity sha512-VW7n89RMukaPtPwE4dvceUqjphng3m7i0zrt/wl35ELPlRcnptvsXznqEfv9mkp+NYkTQJ8/Hy/Wivy32Xi8xQ==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc14"
+    "@diograph/folder-generator" "^0.2.0-rc1"
+    "@diory/diosphere-js" "^0.2.6-rc2"
+    path-browserify "^1.0.1"
+
+"@diograph/local-client@^0.3.0-rc4":
+  version "0.3.0-rc4"
+  resolved "https://registry.yarnpkg.com/@diograph/local-client/-/local-client-0.3.0-rc4.tgz#7b1ac3f0a6e50152557e3b2e639da58110209f1f"
+  integrity sha512-FpavjGxkYn5+LWI0mF8O6MkWpI4sJ2guU5v6syi5bsqG3kafshh+29b0CdQ8KTVCbLauoGWH6qA/dq0GkWAD1w==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc14"
+    "@diograph/folder-generator" "^0.2.0-rc1"
+    "@diory/diosphere-js" "^0.2.6-rc2"
+    file-type "16.4.0"
+    path-browserify "^1.0.1"
+
+"@diograph/local-client@^0.3.0-rc6":
+  version "0.3.0-rc6"
+  resolved "https://registry.yarnpkg.com/@diograph/local-client/-/local-client-0.3.0-rc6.tgz#b93ffcfc9ec36bd433402c8824cdafa8ee8d4889"
+  integrity sha512-IXQdhvmpOpfqTssHeo42lu5h1nrmgk7po69cGBtR2NqFOYunLbtfKbI7E2Uxou0WMTAIVe3OQGXOgkhfkyOP2Q==
+  dependencies:
+    "@diory/client-js" "^0.2.0-rc6"
+    file-type "16.4.0"
+    path-browserify "^1.0.1"
+    sharp "0.31.2"
+
+"@diory/client-js@^0.2.0-rc6":
+  version "0.2.0-rc6"
+  resolved "https://registry.yarnpkg.com/@diory/client-js/-/client-js-0.2.0-rc6.tgz#dd94e81adae2555fef6c63ba028e3f04cb8f3977"
+  integrity sha512-tepnP/sf7tYLCGur+ztqIXGME4PnVNVDcuNU5qCu00p+r+LvsBpwPsE9GHuhjFA6G7XwX9NiXznOsUxxUeJWAQ==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc14"
+    "@diograph/folder-generator" "^0.3.0-rc1"
+    "@diory/diosphere-js" "0.2.6-rc2"
+    path-browserify "^1.0.1"
+    uuid "8.3.2"
+
+"@diory/client-js@^0.2.0-rc7":
+  version "0.2.0-rc7"
+  resolved "https://registry.yarnpkg.com/@diory/client-js/-/client-js-0.2.0-rc7.tgz#52afd74b7eefce2a84bcadaa444f676a41463a8a"
+  integrity sha512-pjOOSbS9LWP+S7PzpD67VZqXfrjcDlx7zpbo8BwpwcTJT0qZ5lXfw1rap0GpUO1PLdEVlZfXHl//qzHD4UzmtQ==
+  dependencies:
+    "@diograph/diograph" "0.3.0-rc14"
+    "@diograph/folder-generator" "^0.3.0-rc1"
+    "@diory/diosphere-js" "0.2.6-rc2"
+    path-browserify "^1.0.1"
+    uuid "8.3.2"
+
+"@diory/diosphere-js@0.2.6-rc2", "@diory/diosphere-js@^0.2.6-rc2":
+  version "0.2.6-rc2"
+  resolved "https://registry.yarnpkg.com/@diory/diosphere-js/-/diosphere-js-0.2.6-rc2.tgz#dfe334927d231795dfdbd87f8a538b0ed50c03b5"
+  integrity sha512-NN7/TFkQcgF0UANcAkWjUtI9swX8LPwYVm6g4oDZ6Rib9dNCSBvAyjq8GJ/VMYPLyMaS3WZBgQZ5+EoLF9Xnjg==
+  dependencies:
+    uuid "8.3.2"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -561,6 +691,11 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@tokenizer/token@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.1.1.tgz#f0d92c12f87079ddfd1b29f614758b9696bc29e3"
+  integrity sha512-XO6INPbZCxdprl+9qa/AAbFFOMzzwqYxpjPgLICrMD6C2FCw6qfJOPcBk6JqqPLSaZ/Qx87qn4rpPmPMwaAK6w==
+
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
@@ -643,7 +778,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.13.0.tgz#0400d1e6ce87e9d3032c19eb6c58205b0d3f7850"
   integrity sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==
 
-"@types/path-browserify@^1.0.0":
+"@types/path-browserify@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@types/path-browserify/-/path-browserify-1.0.2.tgz#14b62d4371316016f254b9cca5c10e60ef33dcc0"
   integrity sha512-ZkC5IUqqIFPXx3ASTTybTzmQdwHwe2C0u3eL75ldQ6T9E9IWFJodn6hIfbZGab73DfyiHN4Xw15gNxUq2FbvBA==
@@ -660,32 +795,15 @@
   dependencies:
     "@types/node" "*"
 
-"@types/sharp@0.31.0":
-  version "0.31.0"
-  resolved "https://registry.yarnpkg.com/@types/sharp/-/sharp-0.31.0.tgz#c4af03a7e1d126f0d428a265e126fabd86ab6d0f"
-  integrity sha512-nwivOU101fYInCwdDcH/0/Ru6yIRXOpORx25ynEOc6/IakuCmjOAGpaO5VfUl4QkDtUC6hj+Z2eCQvgXOioknw==
-  dependencies:
-    "@types/node" "*"
-
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
-"@types/uuid@8.3.2":
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.2.tgz#b7077bdfc866dbb39939029774806f24e95be791"
-  integrity sha512-u40ViizKDmdl5FhOXn9WQbulpigYCaiD5hD4KqR3xyQww6l3+0ND+A9TeFla8tFpqvR+UAkJdYb/8jdaQG4/nw==
-
 "@types/uuid@^8.3.4":
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
   integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
-
-"@types/uuid@^9.0.0":
-  version "9.0.8"
-  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-9.0.8.tgz#7545ba4fc3c003d6c756f651f3bf163d8f0f29ba"
-  integrity sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==
 
 "@types/yargs-parser@*":
   version "21.0.0"
@@ -738,6 +856,16 @@ agent-base@6:
   integrity sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==
   dependencies:
     debug "4"
+
+ajv@^8.12.0:
+  version "8.12.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.12.0.tgz#d1a0527323e22f53562c567c00991577dfbe19d1"
+  integrity sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js "^4.2.2"
 
 ansi-escapes@^4.2.1:
   version "4.3.2"
@@ -1274,6 +1402,11 @@ expect@^27.5.1:
     jest-matcher-utils "^27.5.1"
     jest-message-util "^27.5.1"
 
+fast-deep-equal@^3.1.1:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
+  integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
+
 fast-json-stable-stringify@2.x, fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
@@ -1290,6 +1423,16 @@ fb-watchman@^2.0.0:
   integrity sha512-p5161BqbuCaSnB8jIbzQHOlpgsPmK5rJVDfDKO91Axs5NC1uu3HRQm6wt9cd9/+GtQQIO53JdGXXoyDpTAsgYA==
   dependencies:
     bser "2.1.1"
+
+file-type@16.4.0:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-16.4.0.tgz#464197e44bd94a452d77b09085d977ae0dad2df4"
+  integrity sha512-MDAkwha3wHg11Lp++2T3Gu347eC/DB4r7nYj6iZaf1l7UhGBh2746QKxg0BWC8w2dJsxUEmH8KvLueX+GthN2w==
+  dependencies:
+    readable-web-to-node-stream "^3.0.0"
+    strtok3 "^6.0.3"
+    token-types "^2.0.0"
+    typedarray-to-buffer "^3.1.5"
 
 file-type@^16.4.0:
   version "16.5.4"
@@ -2040,6 +2183,11 @@ json-parse-even-better-errors@^2.3.0:
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
   integrity sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==
 
+json-schema-traverse@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
+  integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
+
 json5@2.x, json5@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
@@ -2399,6 +2547,11 @@ pump@^3.0.0:
     end-of-stream "^1.1.0"
     once "^1.3.1"
 
+punycode@^2.1.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
+  integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
+
 punycode@^2.1.1:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
@@ -2444,6 +2597,11 @@ require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==
+
+require-from-string@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
+  integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
 
 requires-port@^1.0.0:
   version "1.0.0"
@@ -2655,7 +2813,7 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==
 
-strtok3@^6.2.4:
+strtok3@^6.0.3, strtok3@^6.2.4:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-6.3.0.tgz#358b80ffe6d5d5620e19a073aa78ce947a90f9a0"
   integrity sha512-fZtbhtvI9I48xDSywd/somNqgUHl2L2cstmXCCif0itOf96jeW18MBSyrLuNicYQVkvpOxkZtkzujiTJ9LW5Jw==
@@ -2762,6 +2920,14 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+token-types@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/token-types/-/token-types-2.1.1.tgz#bd585d64902aaf720b8979d257b4b850b4d45c45"
+  integrity sha512-wnQcqlreS6VjthyHO3Y/kpK/emflxDBNhlNUPfh7wE39KnuDdOituXomIbyI79vBtF0Ninpkh72mcuRHo+RG3Q==
+  dependencies:
+    "@tokenizer/token" "^0.1.1"
+    ieee754 "^1.2.1"
+
 token-types@^4.1.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/token-types/-/token-types-4.2.1.tgz#0f897f03665846982806e138977dbe72d44df753"
@@ -2849,6 +3015,13 @@ update-browserslist-db@^1.0.10:
   dependencies:
     escalade "^3.1.1"
     picocolors "^1.0.0"
+
+uri-js@^4.2.2:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.4.1.tgz#9b1a52595225859e55f669d928f88c6c57f2a77e"
+  integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
+  dependencies:
+    punycode "^2.1.0"
 
 url-parse@^1.5.3:
   version "1.5.10"

@@ -1,25 +1,16 @@
+import { join } from 'path-browserify'
 import { Diory } from '@diograph/diograph'
-const { join } = require('path')
+
+import { mockDataClient } from './testUtils'
 
 import { generateDiograph } from './generateDiograph'
 import * as diographJson from './__fixtures__/diograph.json'
+import * as pathsJson from './__fixtures__/paths.json'
 
 // Mocks
-jest.mock('fs', () => ({
-  ...jest.requireActual('fs'),
-  statSync: () => ({
-    mtime: {
-      toISOString: () => 'some-mtime',
-    },
-    birthtime: {
-      toISOString: () => 'some-birthtime',
-    },
-  }),
-}))
-
-let id = 0
+let dioryId = 0
 function generateMockFileDioryId() {
-  return `some-file-diory-id${id++}`
+  return `some-file-diory-id${dioryId++}`
 }
 
 jest.mock('@diograph/file-generator', () => ({
@@ -43,12 +34,17 @@ describe('generateDiograph', () => {
   })
 
   describe('given folder path', () => {
-    it('generates diograph from folder files and subfolders', async () => {
+    it('generates diograph and paths from folder files and subfolders', async () => {
       const folderPath = join(__dirname, '/__fixtures__/example-folder')
+      dioryId = 0
 
-      const diograph = await generateDiograph(folderPath)
+      const { diograph, paths } = await generateDiograph(
+        folderPath,
+        mockDataClient('example-folder', '2022-01-01', '2023-01-01'),
+      )
 
       expect(diograph.toObject()).toEqual(diographJson)
+      expect(paths).toEqual(pathsJson)
     })
   })
 })

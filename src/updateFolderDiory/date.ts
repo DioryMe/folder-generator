@@ -1,4 +1,4 @@
-import { IDioryObject } from '@diograph/diograph/types'
+import { IDioryObject } from '@diograph/diograph'
 
 export function getDate(linkedDiorys: IDioryObject[]): string | undefined {
   const epocDates = linkedDiorys

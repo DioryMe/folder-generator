@@ -1,10 +1,22 @@
-import { IDiograph } from '@diograph/diograph/types'
+import { IDiograph } from '@diograph/diograph'
+import { IDataClient } from '@diory/client-js'
 
-import { getFolders, IFolder } from './utils/getPaths'
-import { generateDiographFromFolders } from './utils/generateDiographFromFolders'
+import { IDiories, IFolderPath, IPaths } from './types'
 
-export const generateDiograph = async (rootPath: string): Promise<IDiograph> => {
-  const folders: IFolder[] = await getFolders(rootPath)
+import { getFolderPaths } from './utils/getFolderPaths'
+import { generateDiories } from './utils/generateDiories'
+import { updateFolderDiories } from './utils/updateFolderDiories'
+import { convertToDiographAndPaths } from './utils/convertToDiographAndPaths'
 
-  return generateDiographFromFolders(rootPath, folders)
+export const generateDiograph = async (
+  rootPath: string,
+  client: IDataClient,
+): Promise<{ diograph: IDiograph; paths: IPaths }> => {
+  const folderPaths: IFolderPath[] = await getFolderPaths(rootPath, '/', client)
+  console.info('Generating diories from folders', folderPaths)
+  const diories: IDiories = await generateDiories(rootPath, folderPaths, client)
+
+  updateFolderDiories(diories, folderPaths)
+
+  return convertToDiographAndPaths(diories)
 }
