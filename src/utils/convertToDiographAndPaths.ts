@@ -1,6 +1,6 @@
 import { Diograph } from '@diograph/diograph'
 
-import { IDiograph } from '@diograph/diograph'
+import { IDiograph } from '@diograph/diograph/types'
 import { IDiories, IPaths } from '../../types'
 
 export const convertToDiographAndPaths = (

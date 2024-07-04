@@ -1,4 +1,4 @@
-import { IDiograph } from '@diograph/diograph'
+import { IDiograph } from '@diograph/diograph/types'
 
 import { IDiories, IFolderPath, IPaths } from '../types'
 

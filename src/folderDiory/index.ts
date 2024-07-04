@@ -1,6 +1,6 @@
 import { join } from 'path'
 import { Diory } from '@diograph/diograph'
-import { IDiory } from '@diograph/diograph'
+import { IDiory } from '@diograph/diograph/types'
 
 import { getText } from './text'
 import { getImage } from './image'

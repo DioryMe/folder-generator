@@ -1,4 +1,4 @@
-import { IDiory } from '@diograph/diograph'
+import { IDiory } from '@diograph/diograph/types'
 
 export interface IFolderPath {
   path: string

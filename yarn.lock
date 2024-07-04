@@ -291,28 +291,23 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@diograph/diograph@0.3.0-rc11":
-  version "0.3.0-rc11"
-  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.3.0-rc11.tgz#5785f9423371cfada2f101374b52fca8721dd7e2"
-  integrity sha512-IBDJzUlxZOiyVs9E6uNiBKZlBrtrj84u59aKMU2tvQ/r1hQ2ZCmEJJYRXgqoaQCofX1DHmcpWIH+FAnqo6GqcQ==
+"@diograph/diograph@0.2.5-rc1":
+  version "0.2.5-rc1"
+  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.2.5-rc1.tgz#a6f7231a3a0b3590284f899b1c0f20a8f11a09ed"
+  integrity sha512-ox4rblvy7aIhsYgU3Ig+B3W9Y7Ms7DhU/YMI6HrRK+mQjfka1XSuoQPdGTmhEU3CCZxuuqI/fqMTK/umljLlFA==
   dependencies:
+    "@types/path-browserify" "^1.0.0"
+    "@types/uuid" "8.3.2"
     ajv "^8.12.0"
-    uuid "^8.3.2"
+    path-browserify "^1.0.1"
+    uuid "8.3.2"
 
-"@diograph/diograph@0.3.0-rc12":
-  version "0.3.0-rc12"
-  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.3.0-rc12.tgz#093908480a0cd7bc774438dc6dd3ec8d13d98758"
-  integrity sha512-tEU7DWmEv+OKEbmBGj7Xk0RutSpZTP/YLLnXVrVlpXVIYqLvp0ggZWpGwEzLt5Ri1tOfCtJm5ZBhcNrz5BgaEA==
+"@diograph/file-generator@0.2.0-rc1":
+  version "0.2.0-rc1"
+  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.2.0-rc1.tgz#edaa8212172347e29d2c06c6aa655ecd0bf8fdcb"
+  integrity sha512-FuqM1GpYHev0/5/BooVKxCOf5hOLbrEe3GtgmhSqYqyjQfLUHomcnrM7znYxWYJ7u13HP309qZwK9twtwpG3bQ==
   dependencies:
-    ajv "^8.12.0"
-    uuid "^8.3.2"
-
-"@diograph/file-generator@0.1.2-rc8":
-  version "0.1.2-rc8"
-  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.2-rc8.tgz#049f0912962f969c525df87efbe2ab0d534bdceb"
-  integrity sha512-iCBGMpVNZx1SCi0vIOQxwZk/0tJrAEkklie+luYfReD6rw36j+SxwgWF6HErU9V7kGDR74vMOKz0xLZoicr5Dw==
-  dependencies:
-    "@diograph/diograph" "0.3.0-rc11"
+    "@diograph/diograph" "0.2.5-rc1"
     exifreader "^4.8.1"
     file-type "^16.4.0"
     multiformats "^9.6.0"
@@ -640,6 +635,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.13.0.tgz#0400d1e6ce87e9d3032c19eb6c58205b0d3f7850"
   integrity sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==
 
+"@types/path-browserify@^1.0.0":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@types/path-browserify/-/path-browserify-1.0.2.tgz#14b62d4371316016f254b9cca5c10e60ef33dcc0"
+  integrity sha512-ZkC5IUqqIFPXx3ASTTybTzmQdwHwe2C0u3eL75ldQ6T9E9IWFJodn6hIfbZGab73DfyiHN4Xw15gNxUq2FbvBA==
+
 "@types/prettier@^2.1.5":
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.2.tgz#6c2324641cc4ba050a8c710b2b251b377581fbf0"
@@ -656,6 +656,11 @@
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
+
+"@types/uuid@8.3.2":
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.2.tgz#b7077bdfc866dbb39939029774806f24e95be791"
+  integrity sha512-u40ViizKDmdl5FhOXn9WQbulpigYCaiD5hD4KqR3xyQww6l3+0ND+A9TeFla8tFpqvR+UAkJdYb/8jdaQG4/nw==
 
 "@types/uuid@^8.3.4":
   version "8.3.4"
@@ -2284,6 +2289,11 @@ parse5@6.0.1:
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
   integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
 
+path-browserify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/path-browserify/-/path-browserify-1.0.1.tgz#d98454a9c3753d5790860f16f68867b9e46be1fd"
+  integrity sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==
+
 path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-4.0.0.tgz#513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
@@ -2870,7 +2880,7 @@ util-deprecate@^1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
-uuid@^8.3.2:
+uuid@8.3.2, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
