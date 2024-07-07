@@ -3,7 +3,7 @@ import { IDiory } from '@diograph/diograph'
 export interface IFolderPath {
   path: string
   fileNames: string[]
-  subFolderNames?: string[]
+  subfolderNames?: string[]
 }
 
 export interface IPaths {
