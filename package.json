@@ -18,10 +18,9 @@
     "prepare": "yarn test && yarn prettier && yarn build"
   },
   "dependencies": {
-    "@diograph/diograph": "0.3.0-rc12",
-    "@diograph/file-generator": "^0.1.2-rc12",
-    "@diograph/local-client": "^0.3.0-rc4",
-    "@diory/client-js": "^0.2.0-rc7",
+    "@diograph/diograph": "^0.3.0",
+    "@diograph/file-generator": "^0.1.2",
+    "@diograph/local-client": "^0.3.2",
     "path-browserify": "^1.0.1",
     "uuid": "^8.3.2"
   },

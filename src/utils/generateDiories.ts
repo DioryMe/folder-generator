@@ -1,6 +1,6 @@
 import { join } from 'path-browserify'
 import { generateDiory } from '@diograph/file-generator'
-import { IDataClient } from '@diory/client-js'
+import { IDataClient } from '@diograph/local-client'
 
 import { IDiories, IFolderPath } from '../types'
 
