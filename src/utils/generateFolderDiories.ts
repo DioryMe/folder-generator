@@ -1,4 +1,4 @@
-import { IDataClient } from '@diory/client-js'
+import { IDataClient } from '@diograph/local-client'
 
 import { IDiories, IFolderPath } from '../types'
 import { generateFolderDiory } from '../folderDiory'
