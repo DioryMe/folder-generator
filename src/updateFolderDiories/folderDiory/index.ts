@@ -1,6 +1,6 @@
-import { IDiory, ILinkObject } from '@diograph/diograph'
+import { IDiory, ILinkObject } from '@diory/types'
 
-import { ifDefined } from '../utils/ifDefined'
+import { ifDefined } from '../../utils/ifDefined'
 
 import { getImage } from './image'
 import { getDate } from './date'

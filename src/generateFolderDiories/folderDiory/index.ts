@@ -1,6 +1,6 @@
 import { join } from 'path-browserify'
-import { Diory, IDiory } from '@diograph/diograph'
-import { IDataClient } from '@diograph/local-client'
+import { Diory } from '@diograph/diograph'
+import { IDiory, IDataClient } from '@diory/types'
 
 import { getImage } from './image'
 

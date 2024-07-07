@@ -10,11 +10,17 @@ import * as pathsJson from './__fixtures__/paths.json'
 // Mocks
 let dioryId = 0
 function generateMockFileDioryId() {
-  return `some-file-diory-id${dioryId++}`
+  return `some-file-diory-id-${dioryId++}`
 }
 
 jest.mock('@diograph/file-generator', () => ({
-  generateDiory: () => Promise.resolve(new Diory({ id: generateMockFileDioryId() })),
+  generateDiory: () =>
+    Promise.resolve(
+      new Diory({
+        id: generateMockFileDioryId(),
+        text: 'generated',
+      }),
+    ),
 }))
 
 jest.mock('uuid', () => ({

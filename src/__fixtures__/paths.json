@@ -1,13 +1,14 @@
 {
   "folder-uuid": "/",
-  "some-file-diory-id0": "/some-sub-folder/some-sub-folder-image.jpg",
-  "some-file-diory-id1": "/image-with-24-hour.jpg",
-  "some-file-diory-id2": "/some-document.docx",
-  "some-file-diory-id3": "/some-document.odt",
-  "some-file-diory-id4": "/some-document.pdf",
-  "some-file-diory-id5": "/some-image.jpg",
-  "some-file-diory-id6": "/some-music.mp3",
-  "some-file-diory-id7": "/some-text.txt",
-  "some-file-diory-id8": "/some-video.mp4",
+  "some-existing-file-diory-id-0": "/image-with-24-hour.jpg",
+  "some-existing-file-diory-id-1": "/some-document.docx",
+  "some-existing-file-diory-id-2": "/some-document.odt",
+  "some-existing-file-diory-id-3": "/some-document.pdf",
+  "some-existing-file-diory-id-4": "/some-image.jpg",
+  "some-file-diory-id-0": "/some-sub-folder/some-sub-folder-image.jpg",
+  "some-file-diory-id-1": "/diories.json",
+  "some-file-diory-id-2": "/some-music.mp3",
+  "some-file-diory-id-3": "/some-text.txt",
+  "some-file-diory-id-4": "/some-video.mp4",
   "sub-folder-uuid": "/some-sub-folder"
 }
