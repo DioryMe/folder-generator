@@ -1,0 +1,27 @@
+{
+  "some-file-diory-id-0": {
+    "id": "some-file-diory-id-0",
+    "text": "some-sub-folder-image.jpg",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "sub-folder-uuid": {
+    "id": "sub-folder-uuid",
+    "text": "example-folder",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "date": "2022-01-01T00:00:00.000Z",
+    "links": [
+      {
+        "id": "some-file-diory-id-0"
+      }
+    ],
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2023-01-01T00:00:00.000Z"
+  },
+  "/": {
+    "id": "sub-folder-uuid"
+  },
+  "/some-sub-folder-image.jpg": {
+    "id": "some-file-diory-id-0"
+  }
+}
