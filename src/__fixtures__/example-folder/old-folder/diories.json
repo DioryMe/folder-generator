@@ -5,40 +5,48 @@
     "date": "2022-01-01T00:00:00.000Z",
     "links": [
       {
-        "id": "old-folder-uuid"
+        "id": "some-existing-file-diory-id-0"
       },
       {
-        "id": "some-file-diory-id-0"
+        "id": "some-existing-file-diory-id-1"
       },
       {
-        "id": "some-file-diory-id-1"
+        "id": "some-existing-file-diory-id-2"
       },
       {
-        "id": "some-file-diory-id-2"
+        "id": "some-existing-file-diory-id-3"
+      },
+      {
+        "id": "some-existing-file-diory-id-4"
       }
     ],
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2023-01-01T00:00:00.000Z",
-    "id": "folder-uuid"
+    "id": "new-folder-uuid"
   },
-  "/some-music.mp3": {
+  "/image-with-24-hour.jpg": {
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-0"
+    "id": "some-existing-file-diory-id-0"
   },
-  "/some-text.txt": {
+  "/some-document.docx": {
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-1"
+    "id": "some-existing-file-diory-id-1"
   },
-  "/some-video.mp4": {
+  "/some-document.odt": {
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-2"
+    "id": "some-existing-file-diory-id-2"
   },
-  "/old-folder": {
+  "/some-document.pdf": {
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2022-01-01T00:00:00.000Z",
-    "id": "old-folder-uuid"
+    "id": "some-existing-file-diory-id-3"
+  },
+  "/some-image.jpg": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-4"
   }
 }

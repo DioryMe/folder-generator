@@ -2,7 +2,7 @@ import { IDiory } from '@diory/types'
 
 export interface IFolderPath {
   path: string
-  fileNames: string[]
+  fileNames?: string[]
   subfolderNames?: string[]
 }
 

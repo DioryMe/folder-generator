@@ -4,10 +4,12 @@ import { IDiories, IFolderPath } from '../types'
 import { updateFolderDiory } from './folderDiory'
 
 const getLinkedDiories = (rootPath: string, names: string[], diories: IDiories) =>
-  names.map((name) => {
-    const path = join(rootPath, name)
-    return diories[path]
-  })
+  names
+    .map((name) => {
+      const path = join(rootPath, name)
+      return diories[path]
+    })
+    .filter(Boolean)
 
 export const updateFolderDiories = (diories: IDiories, folderPaths: IFolderPath[]): void => {
   folderPaths.forEach(({ path, subfolderNames = [], fileNames = [] }) => {

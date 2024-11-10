@@ -15,7 +15,7 @@ const getFolderDiories = async (
     const dioriesString = await client.readTextItem(folderUrl)
     diories = JSON.parse(dioriesString)
   } catch (error) {
-    console.info('diories.json not found from', folderPath)
+    // diories.json not found
   }
   return Object.entries(diories).reduce(
     (diories: IDiories, [name, dioryObject]: [string, IDioryObject]) => {
