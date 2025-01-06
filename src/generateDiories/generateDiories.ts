@@ -1,13 +1,13 @@
 import { IDataClient } from '@diory/types'
-import { IDiories, IFolderPath } from './types'
+import { IDiories, IFolderPath } from '../types'
 
-import { getDiories } from './utils/getDiories'
-import { getNewFilePaths } from './utils/getNewFilePaths'
-import { getNewFolderPaths } from './utils/getNewFolderPaths'
+import { getDiories } from '../utils/getDiories'
+import { getNewFilePaths } from '../utils/getNewFilePaths'
+import { getNewFolderPaths } from '../utils/getNewFolderPaths'
 
-import { generateFileDiories } from './generateFileDiories/generateFileDiories'
-import { generateFolderDiories } from './generateFolderDiories/generateFolderDiories'
-import { updateFolderDiories } from './updateFolderDiories/updateFolderDiories'
+import { generateFileDiories } from './generateFileDiories'
+import { generateFolderDiories } from './generateFolderDiories'
+import { updateFolderDiories } from '../updateFolderDiories/updateFolderDiories'
 
 export const generateDiories = async (
   rootUrl: string,

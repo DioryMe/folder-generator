@@ -13,11 +13,17 @@ function generateMockFileDioryId() {
 }
 
 jest.mock('@diograph/file-generator', () => ({
-  generateDiory: () =>
+  generateDiory: (_: string, filePath: string) =>
     Promise.resolve(
       new Diory({
         id: generateMockFileDioryId(),
         text: 'generated',
+        data: [{
+          '@context': 'some-schema',
+          '@type': 'some-type',
+          contentUrl: filePath,
+          encodingFormat: 'some-encodingFormat',
+        }]
       }),
     ),
 }))

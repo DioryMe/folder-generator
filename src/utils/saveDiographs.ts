@@ -20,7 +20,7 @@ export const saveDiographs = (
 
     fileNames?.forEach((fileName: string) => {
       const filePath = join(path, fileName)
-      diograph.addDiory(diories[filePath], `/${fileName}`)
+      diograph.addDiory(diories[filePath])
     })
 
     const url = join(rootUrl, path, 'diograph.json')

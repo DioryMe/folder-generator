@@ -14,9 +14,8 @@ export const generateFileDiories = async (
     newFilePaths.map(async ({ path, fileNames = [] }) =>
       Promise.all(
         fileNames.map(async (fileName: string) => {
-          const folderPath = join(rootUrl, path)
           const dioryPath = join(path, fileName)
-          fileDiories[dioryPath] = await generateDiory(folderPath, fileName, client)
+          fileDiories[dioryPath] = await generateDiory(rootUrl, dioryPath, client)
         }),
       ),
     ),

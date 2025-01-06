@@ -1,10 +1,11 @@
 import { IDataClient, IDiographObject } from '@diory/types'
 import { GenerateDiographOptions, IFolderPath } from './types'
 
-import { convertToDiograph } from './utils/convertToDiograph'
-import { generateDiories } from './generateDiories'
+import { generateDiories } from './generateDiories/generateDiories'
+
 import { getFolderPaths } from './utils/getFolderPaths'
 import { saveDiographs } from './utils/saveDiographs'
+import { convertToDiograph } from './utils/convertToDiograph'
 
 export const generateDiograph = async (
   rootUrl: string,

@@ -1,9 +1,14 @@
 {
-  "folder-uuid": {
+  "/": {
+    "created": "2022-01-01T00:00:00.000Z",
     "id": "folder-uuid",
-    "text": "example-folder",
-    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "folder-uuid": {
+    "created": "2022-01-01T00:00:00.000Z",
     "date": "2022-01-01T00:00:00.000Z",
+    "id": "folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
     "links": [
       {
         "id": "new-folder-uuid"
@@ -21,19 +26,21 @@
         "id": "some-file-diory-id-2"
       }
     ],
-    "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2023-01-01T00:00:00.000Z"
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "example-folder"
   },
-  "/": {
-    "id": "folder-uuid",
+  "/new-folder": {
     "created": "2022-01-01T00:00:00.000Z",
+    "id": "new-folder-uuid",
     "modified": "2022-01-01T00:00:00.000Z"
   },
   "new-folder-uuid": {
     "id": "new-folder-uuid",
-    "text": "new-folder",
-    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "created": "2022-01-01T00:00:00.000Z",
     "date": "2022-01-01T00:00:00.000Z",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new-folder",
     "links": [
       {
         "id": "some-file-diory-id-0"
@@ -53,18 +60,16 @@
       {
         "id": "some-file-diory-id-5"
       }
-    ],
-    "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2023-01-01T00:00:00.000Z"
+    ]
   },
-  "/new-folder": {
-    "id": "new-folder-uuid",
+  "/old-folder": {
     "created": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
     "modified": "2022-01-01T00:00:00.000Z"
   },
   "old-folder-uuid": {
     "id": "old-folder-uuid",
-    "text": "example-folder",
+    "text": "old-folder",
     "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
     "date": "2022-01-01T00:00:00.000Z",
     "links": [
@@ -87,39 +92,28 @@
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2023-01-01T00:00:00.000Z"
   },
-  "/old-folder": {
-    "id": "old-folder-uuid",
-    "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2022-01-01T00:00:00.000Z"
-  },
   "some-file-diory-id-0": {
     "id": "some-file-diory-id-0",
     "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2022-01-01T00:00:00.000Z"
-  },
-  "/some-music.mp3": {
-    "id": "some-file-diory-id-0",
-    "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2022-01-01T00:00:00.000Z"
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [{
+      "contentUrl": "/some-music.mp3"
+    }]
   },
   "some-file-diory-id-1": {
     "id": "some-file-diory-id-1",
     "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2022-01-01T00:00:00.000Z"
-  },
-  "/some-text.txt": {
-    "id": "some-file-diory-id-1",
-    "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2022-01-01T00:00:00.000Z"
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [{
+      "contentUrl": "/some-text.txt"
+    }]
   },
   "some-file-diory-id-2": {
     "id": "some-file-diory-id-2",
     "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2022-01-01T00:00:00.000Z"
-  },
-  "/some-video.mp4": {
-    "id": "some-file-diory-id-2",
-    "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2022-01-01T00:00:00.000Z"
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [{
+      "contentUrl": "/some-video.mp4"
+    }]
   }
 }

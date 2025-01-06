@@ -2,12 +2,20 @@ import { join } from 'path-browserify'
 
 import { IDiories, IFolderPath } from '../types'
 
+const getContentUrls = (oldDiories: IDiories) => {
+    return Object.values(oldDiories)
+      .map(({ data }) => data
+        ?.map(({ contentUrl }) => contentUrl)
+      ).flat()
+      .filter(Boolean)
+}
+
 export const getNewFilePaths = (folderPaths: IFolderPath[], oldDiories: IDiories) =>
   folderPaths
     .map(({ path, fileNames }) => ({
       path,
       fileNames: fileNames?.filter(
-        (fileName) => !Object.keys(oldDiories).includes(join(path, fileName)),
+        (fileName) => !getContentUrls(oldDiories).includes(join(path, fileName)),
       ),
     }))
     .filter(({ fileNames }) => fileNames?.length)

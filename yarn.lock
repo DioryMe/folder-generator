@@ -310,10 +310,10 @@
     ajv "^8.12.0"
     uuid "^8.3.2"
 
-"@diograph/file-generator@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.1.3.tgz#51c3db71ad0ade1b7882fbdd9789880feb6f639b"
-  integrity sha512-BcH1TFpPWFHgVKZErhB7cx1HkidF84PpfcvZx0qiYBtELMsMRL5H914T5IP3QKPECCDN1ZTgfXpcsZwtS0I7pw==
+"@diograph/file-generator@0.4.0-rc1":
+  version "0.4.0-rc1"
+  resolved "https://registry.yarnpkg.com/@diograph/file-generator/-/file-generator-0.4.0-rc1.tgz#f1c0f7bfe0627bac6b39b30bf7e4c78b4aa3eae5"
+  integrity sha512-SIhPglih5md+qdPF6DXgfU/zwcID5yrWfZz5tLAuKWGa2AmPp0EyVBSEbTVJBcUsns82nlQYnA/2rXNPP4ot0Q==
   dependencies:
     "@diograph/diograph" "^0.3.0"
     exifreader "^4.8.1"
@@ -330,13 +330,6 @@
     path-browserify "^1.0.1"
     sharp "0.31.2"
     uuid "^10.0.0"
-
-"@diory/connection-client-js@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@diory/connection-client-js/-/connection-client-js-0.4.1.tgz#087494ff96ae3739caa118660905a63ac586b9e0"
-  integrity sha512-7Abt0kroRyibpbpPWmcOsiPhvNozgT78ac9qRCNIaz/x/sY/JO0VJNWVrbL6cAIe5AMJYlDNwB/rv3Q7W8KR3A==
-  dependencies:
-    path-browserify "^1.0.1"
 
 "@diory/types@^0.4.2":
   version "0.4.2"
