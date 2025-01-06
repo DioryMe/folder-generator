@@ -16,5 +16,6 @@ export interface IDiories {
 
 export interface GenerateDiographOptions {
   level?: number
-  saveDiories?: boolean
+  saveDiograph?: boolean
+  excludedPaths?: string[]
 }

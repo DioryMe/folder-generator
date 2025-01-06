@@ -5,7 +5,6 @@ import { mockDataClient } from './testUtils'
 
 import { generateDiograph } from './generateDiograph'
 import * as diographJson from './__fixtures__/diograph.json'
-import * as pathsJson from './__fixtures__/paths.json'
 
 // Mocks
 let dioryId = 0
@@ -44,42 +43,56 @@ describe('generateDiograph', () => {
       const folderPath = join(__dirname, '/__fixtures__/example-folder')
       dioryId = 0
 
-      const { diograph, paths } = await generateDiograph(
+      const diograph = await generateDiograph(
         folderPath,
+        '/',
         mockDataClient('example-folder', '2022-01-01', '2023-01-01'),
-        { saveDiories: true },
+        { saveDiograph: true },
       )
 
       expect(diograph).toEqual(diographJson)
-      expect(paths).toEqual(pathsJson)
     })
 
-    it('generates diograph and paths from old folder files and subfolders', async () => {
-      const folderPath = join(__dirname, '/__fixtures__/example-folder/new-folder')
+    it('generates diograph from example folder files and subfolders', async () => {
+      const folderPath = join(__dirname, '/__fixtures__/example-folder')
       dioryId = 0
 
-      const { diograph, paths } = await generateDiograph(
+      const diograph = await generateDiograph(
         folderPath,
-        mockDataClient('new-folder', '2022-01-01', '2023-01-01'),
-        { saveDiories: true },
+        '/',
+        mockDataClient('example-folder', '2022-01-01', '2023-01-01'),
+        { saveDiograph: true, level: 1 },
       )
 
-      expect(diograph).toMatchSnapshot()
-      expect(paths).toMatchSnapshot()
+      expect(diograph).toEqual(diographJson)
     })
 
     it('generates diograph and paths from new folder files and subfolders', async () => {
-      const folderPath = join(__dirname, '/__fixtures__/example-folder/old-folder')
+      const folderPath = join(__dirname, '/__fixtures__/example-folder/new-folder')
       dioryId = 0
 
-      const { diograph, paths } = await generateDiograph(
+      const diograph = await generateDiograph(
         folderPath,
-        mockDataClient('old-folder', '2022-01-01', '2023-01-01'),
-        { saveDiories: true },
+        '/',
+        mockDataClient('new-folder', '2022-01-01', '2023-01-01'),
+        { saveDiograph: true },
       )
 
       expect(diograph).toMatchSnapshot()
-      expect(paths).toMatchSnapshot()
+    })
+
+    it('generates diograph and paths from old folder files and subfolders', async () => {
+      const folderPath = join(__dirname, '/__fixtures__/example-folder/old-folder')
+      dioryId = 0
+
+      const diograph = await generateDiograph(
+        folderPath,
+        '/',
+        mockDataClient('old-folder', '2022-01-01', '2023-01-01'),
+        { saveDiograph: true },
+      )
+
+      expect(diograph).toMatchSnapshot()
     })
   })
 })
