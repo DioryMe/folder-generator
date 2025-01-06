@@ -1,3 +1,3 @@
-const excludedFileNames = ['diories.json']
+const excludedFileNames = ['diograph.json']
 
 export const isValidFile = (fileName: string): boolean => !excludedFileNames.includes(fileName)

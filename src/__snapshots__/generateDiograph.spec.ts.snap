@@ -1,16 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`generateDiograph given folder path generates diograph and paths from new folder files and subfolders 1`] = `
+exports[`generateDiograph given folder path generates diograph and paths from new and old folder files and subfolders 1`] = `
 Object {
-  "/": Object {
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder": Object {
     "created": "2022-01-01T00:00:00.000Z",
     "id": "new-folder-uuid",
     "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/old-folder": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/some-music.mp3": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-0",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/some-text.txt": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-1",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/some-video.mp4": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-2",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "folder-uuid": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "date": "2022-01-01T00:00:00.000Z",
+    "id": "folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": Array [
+      Object {
+        "id": "new-folder-uuid",
+      },
+      Object {
+        "id": "old-folder-uuid",
+      },
+      Object {
+        "id": "some-file-diory-id-0",
+      },
+      Object {
+        "id": "some-file-diory-id-1",
+      },
+      Object {
+        "id": "some-file-diory-id-2",
+      },
+    ],
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "example-folder",
   },
   "new-folder-uuid": Object {
     "created": "2022-01-01T00:00:00.000Z",
     "date": "2022-01-01T00:00:00.000Z",
     "id": "new-folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": Array [
+      Object {
+        "id": "some-file-diory-id-0",
+      },
+      Object {
+        "id": "some-file-diory-id-1",
+      },
+      Object {
+        "id": "some-file-diory-id-2",
+      },
+      Object {
+        "id": "some-file-diory-id-3",
+      },
+      Object {
+        "id": "some-file-diory-id-4",
+      },
+      Object {
+        "id": "some-file-diory-id-5",
+      },
+    ],
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new-folder",
+  },
+  "old-folder-uuid": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "date": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
     "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
     "links": Array [
       Object {
@@ -30,52 +108,61 @@ Object {
       },
     ],
     "modified": "2023-01-01T00:00:00.000Z",
-    "text": "example-folder",
+    "text": "old-folder",
   },
-  "some-existing-file-diory-id-0": Object {
+  "some-file-diory-id-0": Object {
     "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-0",
+    "id": "some-file-diory-id-0",
     "modified": "2022-01-01T00:00:00.000Z",
   },
-  "some-existing-file-diory-id-1": Object {
+  "some-file-diory-id-1": Object {
     "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-1",
+    "id": "some-file-diory-id-1",
     "modified": "2022-01-01T00:00:00.000Z",
   },
-  "some-existing-file-diory-id-2": Object {
+  "some-file-diory-id-2": Object {
     "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-2",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "some-existing-file-diory-id-3": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-3",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "some-existing-file-diory-id-4": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-4",
+    "id": "some-file-diory-id-2",
     "modified": "2022-01-01T00:00:00.000Z",
   },
 }
 `;
 
-exports[`generateDiograph given folder path generates diograph and paths from new folder files and subfolders 2`] = `
+exports[`generateDiograph given folder path generates diograph and paths from new folder files and subfolders 1`] = `
 Object {
-  "new-folder-uuid": "/",
-  "some-existing-file-diory-id-0": "/image-with-24-hour.jpg",
-  "some-existing-file-diory-id-1": "/some-document.docx",
-  "some-existing-file-diory-id-2": "/some-document.odt",
-  "some-existing-file-diory-id-3": "/some-document.pdf",
-  "some-existing-file-diory-id-4": "/some-image.jpg",
-}
-`;
-
-exports[`generateDiograph given folder path generates diograph and paths from old folder files and subfolders 1`] = `
-Object {
-  "/": Object {
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder": Object {
     "created": "2022-01-01T00:00:00.000Z",
     "id": "new-folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder/image-with-24-hour.jpg": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-0",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder/some-document.docx": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-1",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder/some-document.odt": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-2",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder/some-document.pdf": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-3",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder/some-image.jpg": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-4",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder/some-sub-folder-image.jpg": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-5",
     "modified": "2022-01-01T00:00:00.000Z",
   },
   "new-folder-uuid": Object {
@@ -145,14 +232,215 @@ Object {
 }
 `;
 
-exports[`generateDiograph given folder path generates diograph and paths from old folder files and subfolders 2`] = `
+exports[`generateDiograph given folder path generates diograph and paths from old folder files and subfolders 1`] = `
 Object {
-  "new-folder-uuid": "/",
-  "some-file-diory-id-0": "/image-with-24-hour.jpg",
-  "some-file-diory-id-1": "/some-document.docx",
-  "some-file-diory-id-2": "/some-document.odt",
-  "some-file-diory-id-3": "/some-document.pdf",
-  "some-file-diory-id-4": "/some-image.jpg",
-  "some-file-diory-id-5": "/some-sub-folder-image.jpg",
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/old-folder": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/old-folder/image-with-24-hour.jpg": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-0",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/old-folder/some-document.docx": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-1",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/old-folder/some-document.odt": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-2",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/old-folder/some-document.pdf": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-3",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/old-folder/some-image.jpg": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-4",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "old-folder-uuid": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "date": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": Array [
+      Object {
+        "id": "some-existing-file-diory-id-0",
+      },
+      Object {
+        "id": "some-existing-file-diory-id-1",
+      },
+      Object {
+        "id": "some-existing-file-diory-id-2",
+      },
+      Object {
+        "id": "some-existing-file-diory-id-3",
+      },
+      Object {
+        "id": "some-existing-file-diory-id-4",
+      },
+    ],
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "old-folder",
+  },
+  "some-existing-file-diory-id-0": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-0",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "some-existing-file-diory-id-1": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-1",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "some-existing-file-diory-id-2": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-2",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "some-existing-file-diory-id-3": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-3",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "some-existing-file-diory-id-4": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-existing-file-diory-id-4",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+}
+`;
+
+exports[`generateDiograph given folder path generates diograph from example folder files and subfolders 1`] = `
+Object {
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/new-folder": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "new-folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/old-folder": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/some-music.mp3": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-0",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/some-text.txt": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-1",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "LocalClient/Users/op/2023/diory/folder-generator/src/__fixtures__/example-folder/some-video.mp4": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-2",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "folder-uuid": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "date": "2022-01-01T00:00:00.000Z",
+    "id": "folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": Array [
+      Object {
+        "id": "new-folder-uuid",
+      },
+      Object {
+        "id": "old-folder-uuid",
+      },
+      Object {
+        "id": "some-file-diory-id-0",
+      },
+      Object {
+        "id": "some-file-diory-id-1",
+      },
+      Object {
+        "id": "some-file-diory-id-2",
+      },
+    ],
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "example-folder",
+  },
+  "new-folder-uuid": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "date": "2022-01-01T00:00:00.000Z",
+    "id": "new-folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": Array [
+      Object {
+        "id": "some-file-diory-id-0",
+      },
+      Object {
+        "id": "some-file-diory-id-1",
+      },
+      Object {
+        "id": "some-file-diory-id-2",
+      },
+      Object {
+        "id": "some-file-diory-id-3",
+      },
+      Object {
+        "id": "some-file-diory-id-4",
+      },
+      Object {
+        "id": "some-file-diory-id-5",
+      },
+    ],
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new-folder",
+  },
+  "old-folder-uuid": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "date": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": Array [
+      Object {
+        "id": "some-existing-file-diory-id-0",
+      },
+      Object {
+        "id": "some-existing-file-diory-id-1",
+      },
+      Object {
+        "id": "some-existing-file-diory-id-2",
+      },
+      Object {
+        "id": "some-existing-file-diory-id-3",
+      },
+      Object {
+        "id": "some-existing-file-diory-id-4",
+      },
+    ],
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "old-folder",
+  },
+  "some-file-diory-id-0": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-0",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "some-file-diory-id-1": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-1",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
+  "some-file-diory-id-2": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "some-file-diory-id-2",
+    "modified": "2022-01-01T00:00:00.000Z",
+  },
 }
 `;

@@ -1,7 +1,7 @@
 {
   "folder-uuid": "/",
-  "new-folder-uuid": "/new-folder",
-  "old-folder-uuid": "/old-folder",
+  "new-folder-uuid": "/new-folder/",
+  "old-folder-uuid": "/old-folder/",
   "some-file-diory-id-0": "/some-music.mp3",
   "some-file-diory-id-1": "/some-text.txt",
   "some-file-diory-id-2": "/some-video.mp4"
