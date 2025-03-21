@@ -1,10 +1,10 @@
-import { IDataClient, IDiographObject } from '@diory/types'
+import { IDataClient } from '@diory/types'
+import { IDiographObject } from '@diograph/diograph'
 import { GenerateDiographOptions, IFolderPath } from './types'
 
 import { generateDiories } from './generateDiories/generateDiories'
 
 import { getFolderPaths } from './utils/getFolderPaths'
-import { saveDiographs } from './utils/saveDiographs'
 import { convertToDiograph } from './utils/convertToDiograph'
 
 export const generateDiograph = async (
@@ -19,13 +19,13 @@ export const generateDiograph = async (
     client,
     options?.level,
   )
-  // const folderPaths = filterExcludedPaths(allFolderPaths, options?.excludedPaths)
 
   const diories = await generateDiories(rootUrl, folderPaths, client)
+  const diograph = convertToDiograph(diories)
 
   if (options?.saveDiograph) {
-    saveDiographs(rootUrl, folderPaths, diories, client)
+    await client.writeItem(rootUrl, diograph.toJson())
   }
 
-  return convertToDiograph(diories)
+  return diograph.toObject()
 }

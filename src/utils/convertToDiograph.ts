@@ -1,11 +1,13 @@
-import { Diograph } from '@diograph/diograph'
-import { IDiographObject } from '@diory/types'
-import { IDiories, IPaths } from '../types'
+import { Diograph, IDiograph } from '@diograph/diograph'
+import { IDiories } from '../types'
 
-export const convertToDiograph = (diories: IDiories): IDiographObject => {
+export const convertToDiograph = (diories: IDiories): IDiograph => {
   const diograph = new Diograph()
-  Object.entries(diories).forEach(([path, diory]) => {
-    diograph.addDiory(diory, path)
-  })
-  return diograph.toObject()
+  Object.entries(diories)
+    .reverse()
+    .forEach(([path, diory]) => {
+      const rootPathOnly = path === '/' ? '/' : undefined
+      diograph.addDiory(diory, rootPathOnly)
+    })
+  return diograph
 }

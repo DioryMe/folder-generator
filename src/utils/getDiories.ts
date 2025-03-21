@@ -1,14 +1,14 @@
 import { join } from 'path-browserify'
-import { Diory } from '@diograph/diograph'
-import { IDioryObject, IDataClient, IDiographObject } from '@diory/types'
+import { IDataClient } from '@diory/types'
+import { Diory, IDioryObject, IDiographObject } from '@diograph/diograph'
 
 import { IDiories, IFolderPath } from '../types'
 
-const getFolderDiories = async (
+const getDiograph = async (
   rootUrl: string,
   folderPath: string,
   client: IDataClient,
-): Promise<IDiories> => {
+): Promise<IDiographObject> => {
   const folderUrl = join(rootUrl, folderPath, 'diograph.json')
   let diograph: IDiographObject = {}
   try {
@@ -17,35 +17,28 @@ const getFolderDiories = async (
   } catch (error) {
     // diories.json not found
   }
-  return Object.entries(diograph)
-    .filter(([key, { id }]) => key !== id)
-    .reduce((diories: IDiories, [name, { id }]: [string, IDioryObject]) => {
-      const dioryObject = diograph[id]
-      if (dioryObject) {
-        const path = name === '/' ? folderPath : join(folderPath, name)
-        diories[path] = new Diory(dioryObject)
-      }
-      return diories
-    }, {})
+  return diograph
 }
 
-const getSubfolderDiories = async (
+const resolvePath = (address: string, dioryObject: IDioryObject) => {
+  const { data = [] } = dioryObject
+  const { contentUrl = '' } = data.find(({ contentUrl }) => contentUrl) || {}
+  return contentUrl ? contentUrl : address
+}
+
+const getFolderDiories = async (
   rootUrl: string,
-  subfolderPaths: string[],
+  folderPath: string,
   client: IDataClient,
-) => {
-  let diories: IDiories = {}
-  await Promise.all(
-    subfolderPaths.map(async (subfolderPath) => {
-      const subfolderDiories = await getFolderDiories(rootUrl, subfolderPath, client)
-      const subfolderDiory = subfolderDiories[subfolderPath]
-      if (subfolderDiory) {
-        Object.assign(diories, { [subfolderPath]: subfolderDiory })
-      }
-      return
-    }),
-  )
-  return diories
+): Promise<IDiories> => {
+  const diograph: IDiographObject = await getDiograph(rootUrl, folderPath, client)
+  return Object.entries(diograph)
+    .filter(([key]) => key !== diograph['/'].id)
+    .reduce((diories: IDiories, [key, dioryObject]: [string, IDioryObject]) => {
+      const path = join(folderPath, resolvePath(key, dioryObject))
+      diories[path] = key === '/' ? new Diory(diograph[dioryObject.id]) : new Diory(dioryObject)
+      return diories
+    }, {})
 }
 
 export const getDiories = async (
@@ -57,12 +50,7 @@ export const getDiories = async (
   await Promise.all(
     folderPaths.map(async ({ path, subfolderNames }) => {
       const folderDiories = await getFolderDiories(rootUrl, path, client)
-      Object.assign(diories, folderDiories)
-      if (subfolderNames) {
-        const subfolderPaths = subfolderNames.map((subfolderName) => join(path, subfolderName))
-        const subfolderDiories = await getSubfolderDiories(rootUrl, subfolderPaths, client)
-        Object.assign(diories, subfolderDiories)
-      }
+      Object.assign(diories, folderDiories) // Parent before children
       return
     }),
   )

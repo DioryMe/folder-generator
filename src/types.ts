@@ -1,9 +1,9 @@
-import { IDiory } from '@diory/types'
+import { IDiory } from '@diograph/diograph'
 
 export interface IFolderPath {
   path: string
-  fileNames?: string[]
-  subfolderNames?: string[]
+  fileNames: string[]
+  subfolderNames: string[]
 }
 
 export interface IPaths {

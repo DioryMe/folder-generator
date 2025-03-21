@@ -7,7 +7,7 @@ const getLinkedDiories = (rootPath: string, names: string[], diories: IDiories) 
   names
     .map((name) => {
       const path = join(rootPath, name)
-      return diories[path]
+      return diories[path] || { id: `/${name}/` }
     })
     .filter(Boolean)
 

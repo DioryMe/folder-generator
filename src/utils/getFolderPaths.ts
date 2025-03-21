@@ -24,7 +24,7 @@ export async function getFolderPaths(
 
   return subfolders.concat([
     {
-      path: folderPath,
+      path: folderPath === '/' ? folderPath : `${folderPath}/`,
       fileNames,
       subfolderNames,
     },

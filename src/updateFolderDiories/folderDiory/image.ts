@@ -1,4 +1,4 @@
-import { IDioryObject } from '@diory/types'
+import { IDioryObject } from '@diograph/diograph'
 
 function getMiddleItem(
   _: string | undefined,

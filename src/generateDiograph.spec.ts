@@ -1,29 +1,34 @@
 import { join } from 'path-browserify'
 import { Diory } from '@diograph/diograph'
+import { v4 } from 'uuid'
 
 import { mockDataClient } from './testUtils'
 
 import { generateDiograph } from './generateDiograph'
-import * as diographJson from './__fixtures__/diograph.json'
+import * as allDiographJson from './__fixtures__/diograph.json'
+import * as exampleDiographJson from './__fixtures__/example-folder/diograph.json'
+import * as oldDiographJson from './__fixtures__/example-folder/old-folder/diograph.json'
 
 // Mocks
 let dioryId = 0
-function generateMockFileDioryId() {
-  return `some-file-diory-id-${dioryId++}`
+function generateMockId(prefix: string) {
+  return `${prefix}-${dioryId++}`
 }
 
 jest.mock('@diograph/file-generator', () => ({
   generateDiory: (_: string, filePath: string) =>
     Promise.resolve(
       new Diory({
-        id: generateMockFileDioryId(),
-        text: 'generated',
-        data: [{
-          '@context': 'some-schema',
-          '@type': 'some-type',
-          contentUrl: filePath,
-          encodingFormat: 'some-encodingFormat',
-        }]
+        id: generateMockId('new-diory-id'),
+        text: 'new',
+        data: [
+          {
+            '@context': 'some-schema',
+            '@type': 'some-type',
+            contentUrl: filePath,
+            encodingFormat: 'some-encodingFormat',
+          },
+        ],
       }),
     ),
 }))
@@ -36,7 +41,7 @@ describe('generateDiograph', () => {
   beforeAll(() => {
     jest.spyOn(Math, 'random').mockReturnValue(0)
     jest.useFakeTimers()
-    jest.setSystemTime(new Date('2022-01-01T00:00:00.000Z'))
+    jest.setSystemTime(new Date('2023-01-01T00:00:00.000Z'))
   })
 
   afterAll(() => {
@@ -53,10 +58,10 @@ describe('generateDiograph', () => {
         folderPath,
         '/',
         mockDataClient('example-folder', '2022-01-01', '2023-01-01'),
-        { saveDiograph: true },
+        { saveDiograph: true, level: 10 },
       )
 
-      expect(diograph).toEqual(diographJson)
+      expect(diograph).toEqual(allDiographJson)
     })
 
     it('generates diograph from example folder files and subfolders', async () => {
@@ -70,7 +75,7 @@ describe('generateDiograph', () => {
         { saveDiograph: true, level: 1 },
       )
 
-      expect(diograph).toEqual(diographJson)
+      expect(diograph).toEqual(exampleDiographJson)
     })
 
     it('generates diograph and paths from new folder files and subfolders', async () => {
@@ -87,7 +92,7 @@ describe('generateDiograph', () => {
       expect(diograph).toMatchSnapshot()
     })
 
-    it('generates diograph and paths from old folder files and subfolders', async () => {
+    it('gets diograph and paths from old folder files', async () => {
       const folderPath = join(__dirname, '/__fixtures__/example-folder/old-folder')
       dioryId = 0
 
@@ -98,7 +103,7 @@ describe('generateDiograph', () => {
         { saveDiograph: true },
       )
 
-      expect(diograph).toMatchSnapshot()
+      expect(diograph).toEqual(oldDiographJson)
     })
   })
 })

@@ -1,6 +1,9 @@
 const { join } = require('path-browserify')
-import { getFolderPaths } from './getFolderPaths'
 import { LocalClient } from '@diograph/local-client'
+
+import * as folderPathsFixture from './getFolderPaths.fixture.json'
+
+import { getFolderPaths } from './getFolderPaths'
 
 describe('getFolderPaths', () => {
   describe('given root folder path', () => {
@@ -9,45 +12,7 @@ describe('getFolderPaths', () => {
 
       const folderPaths = await getFolderPaths(folderPath, '/', new LocalClient(), 2)
 
-      expect(folderPaths).toMatchInlineSnapshot(`
-        Array [
-          Object {
-            "fileNames": Array [
-              "image-with-24-hour.jpg",
-              "some-document.docx",
-              "some-document.odt",
-              "some-document.pdf",
-              "some-image.jpg",
-              "some-sub-folder-image.jpg",
-            ],
-            "path": "/new-folder",
-            "subfolderNames": Array [],
-          },
-          Object {
-            "fileNames": Array [
-              "image-with-24-hour.jpg",
-              "some-document.docx",
-              "some-document.odt",
-              "some-document.pdf",
-              "some-image.jpg",
-            ],
-            "path": "/old-folder",
-            "subfolderNames": Array [],
-          },
-          Object {
-            "fileNames": Array [
-              "some-music.mp3",
-              "some-text.txt",
-              "some-video.mp4",
-            ],
-            "path": "/",
-            "subfolderNames": Array [
-              "new-folder",
-              "old-folder",
-            ],
-          },
-        ]
-      `)
+      expect(folderPaths).toEqual(folderPathsFixture)
     })
 
     describe('given level 1', () => {
@@ -56,22 +21,7 @@ describe('getFolderPaths', () => {
 
         const folderPaths = await getFolderPaths(folderPath, '/', new LocalClient(), 1)
 
-        expect(folderPaths).toMatchInlineSnapshot(`
-          Array [
-            Object {
-              "fileNames": Array [
-                "some-music.mp3",
-                "some-text.txt",
-                "some-video.mp4",
-              ],
-              "path": "/",
-              "subfolderNames": Array [
-                "new-folder",
-                "old-folder",
-              ],
-            },
-          ]
-        `)
+        expect(folderPaths).toEqual([folderPathsFixture[2]])
       })
     })
   })

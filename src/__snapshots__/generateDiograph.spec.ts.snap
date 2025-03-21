@@ -5,37 +5,91 @@ Object {
   "/": Object {
     "created": "2022-01-01T00:00:00.000Z",
     "id": "new-folder-uuid",
-    "modified": "2022-01-01T00:00:00.000Z",
+    "modified": "2023-01-01T00:00:00.000Z",
   },
-  "/image-with-24-hour.jpg": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-0",
-    "modified": "2022-01-01T00:00:00.000Z",
+  "new-diory-id-0": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/image-with-24-hour.jpg",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-0",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
   },
-  "/some-document.docx": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-1",
-    "modified": "2022-01-01T00:00:00.000Z",
+  "new-diory-id-1": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-document.docx",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-1",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
   },
-  "/some-document.odt": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-2",
-    "modified": "2022-01-01T00:00:00.000Z",
+  "new-diory-id-2": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-document.odt",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-2",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
   },
-  "/some-document.pdf": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-3",
-    "modified": "2022-01-01T00:00:00.000Z",
+  "new-diory-id-3": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-document.pdf",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-3",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
   },
-  "/some-image.jpg": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-4",
-    "modified": "2022-01-01T00:00:00.000Z",
+  "new-diory-id-4": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-image.jpg",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-4",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
   },
-  "/some-sub-folder-image.jpg": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-5",
-    "modified": "2022-01-01T00:00:00.000Z",
+  "new-diory-id-5": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-sub-folder-image.jpg",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-5",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
   },
   "new-folder-uuid": Object {
     "created": "2022-01-01T00:00:00.000Z",
@@ -44,147 +98,26 @@ Object {
     "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
     "links": Array [
       Object {
-        "id": "some-file-diory-id-0",
+        "id": "new-diory-id-0",
       },
       Object {
-        "id": "some-file-diory-id-1",
+        "id": "new-diory-id-1",
       },
       Object {
-        "id": "some-file-diory-id-2",
+        "id": "new-diory-id-2",
       },
       Object {
-        "id": "some-file-diory-id-3",
+        "id": "new-diory-id-3",
       },
       Object {
-        "id": "some-file-diory-id-4",
+        "id": "new-diory-id-4",
       },
       Object {
-        "id": "some-file-diory-id-5",
+        "id": "new-diory-id-5",
       },
     ],
     "modified": "2023-01-01T00:00:00.000Z",
     "text": "new-folder",
-  },
-  "some-file-diory-id-0": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-0",
-    "modified": "2022-01-01T00:00:00.000Z",
-    "text": "generated",
-  },
-  "some-file-diory-id-1": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-1",
-    "modified": "2022-01-01T00:00:00.000Z",
-    "text": "generated",
-  },
-  "some-file-diory-id-2": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-2",
-    "modified": "2022-01-01T00:00:00.000Z",
-    "text": "generated",
-  },
-  "some-file-diory-id-3": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-3",
-    "modified": "2022-01-01T00:00:00.000Z",
-    "text": "generated",
-  },
-  "some-file-diory-id-4": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-4",
-    "modified": "2022-01-01T00:00:00.000Z",
-    "text": "generated",
-  },
-  "some-file-diory-id-5": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-file-diory-id-5",
-    "modified": "2022-01-01T00:00:00.000Z",
-    "text": "generated",
-  },
-}
-`;
-
-exports[`generateDiograph given folder path generates diograph and paths from old folder files and subfolders 1`] = `
-Object {
-  "/": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "old-folder-uuid",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "/image-with-24-hour.jpg": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-0",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "/some-document.docx": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-1",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "/some-document.odt": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-2",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "/some-document.pdf": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-3",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "/some-image.jpg": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-4",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "old-folder-uuid": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "date": "2022-01-01T00:00:00.000Z",
-    "id": "old-folder-uuid",
-    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
-    "links": Array [
-      Object {
-        "id": "some-existing-file-diory-id-0",
-      },
-      Object {
-        "id": "some-existing-file-diory-id-1",
-      },
-      Object {
-        "id": "some-existing-file-diory-id-2",
-      },
-      Object {
-        "id": "some-existing-file-diory-id-3",
-      },
-      Object {
-        "id": "some-existing-file-diory-id-4",
-      },
-    ],
-    "modified": "2023-01-01T00:00:00.000Z",
-    "text": "old-folder",
-  },
-  "some-existing-file-diory-id-0": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-0",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "some-existing-file-diory-id-1": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-1",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "some-existing-file-diory-id-2": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-2",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "some-existing-file-diory-id-3": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-3",
-    "modified": "2022-01-01T00:00:00.000Z",
-  },
-  "some-existing-file-diory-id-4": Object {
-    "created": "2022-01-01T00:00:00.000Z",
-    "id": "some-existing-file-diory-id-4",
-    "modified": "2022-01-01T00:00:00.000Z",
   },
 }
 `;
