@@ -19,7 +19,7 @@ export const generateDiories = async (
   const newFilePaths: IFolderPath[] = getNewFilePaths(folderPaths, oldDiories)
   const newFileDiories: IDiories = await generateFileDiories(rootUrl, client, newFilePaths)
 
-  const newFolderPaths: string[] = getNewFolderPaths(folderPaths, oldDiories)
+  const newFolderPaths: IFolderPath[] = getNewFolderPaths(folderPaths, oldDiories)
   const newFolderDiories: IDiories = await generateFolderDiories(rootUrl, client, newFolderPaths)
 
   const diories = { ...newFileDiories, ...newFolderDiories, ...oldDiories }

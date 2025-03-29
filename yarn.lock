@@ -294,6 +294,15 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@diograph/diograph@0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.4.3.tgz#76b51cbc4e6006acf5c31417c4553ed5fbe5c2f2"
+  integrity sha512-qczndQiDw64zDTX078nc7MYgEkMnxlnBQfGmpcu/p5tdVlFjy8x4sP7tlQc7jP4wGdQMnRdWeEg3VgSC+jaiIQ==
+  dependencies:
+    ajv "^8.12.0"
+    path-browserify "^1.0.1"
+    uuid "^8.3.2"
+
 "@diograph/diograph@0.4.3-rc14":
   version "0.4.3-rc14"
   resolved "https://registry.yarnpkg.com/@diograph/diograph/-/diograph-0.4.3-rc14.tgz#f7c5c0f241f52e0208d5bad2155ef3494a57c0dc"

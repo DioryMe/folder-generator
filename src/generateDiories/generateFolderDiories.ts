@@ -1,15 +1,15 @@
 import { IDataClient } from '@diory/types'
 
-import { IDiories } from '../types'
+import { IDiories, IFolderPath } from '../types'
 import { generateFolderDiory } from './folderDiory'
 
 export const generateFolderDiories = (
   rootUrl: string,
   client: IDataClient,
-  newFolderPaths: string[],
+  newFolderPaths: IFolderPath[],
 ): IDiories => {
   const folderDiories: IDiories = {}
-  newFolderPaths.forEach((path) => {
+  newFolderPaths.forEach(({ path }) => {
     folderDiories[path] = generateFolderDiory(rootUrl, path, client)
   })
 

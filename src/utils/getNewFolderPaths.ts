@@ -1,8 +1,13 @@
-import { join } from 'path-browserify'
-
 import { IDiories, IFolderPath } from '../types'
 
-export const getNewFolderPaths = (folderPaths: IFolderPath[], oldDiories: IDiories) =>
+export const getNewFolderPaths = (
+  folderPaths: IFolderPath[],
+  oldDiories: IDiories,
+): IFolderPath[] =>
   folderPaths
-    .map(({ path }) => path)
-    .filter((subfolderName) => !Object.keys(oldDiories).includes(subfolderName))
+    .filter(({ path }) => !Object.keys(oldDiories).includes(path))
+    .map(({ path }) => ({
+      path,
+      fileNames: [],
+      subfolderNames: [],
+    }))
