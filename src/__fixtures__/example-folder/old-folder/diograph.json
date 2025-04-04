@@ -71,12 +71,8 @@
   },
   "old-diory-id-4": {
     "id": "old-diory-id-4",
+    "text": "non content",
     "created": "2022-01-01T00:00:00.000Z",
-    "modified": "2022-01-01T00:00:00.000Z",
-    "data": [
-      {
-        "contentUrl": "/some-image.jpg"
-      }
-    ]
+    "modified": "2022-01-01T00:00:00.000Z"
   }
 }

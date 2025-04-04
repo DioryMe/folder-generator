@@ -1,6 +1,6 @@
 {
   "name": "@diograph/folder-generator",
-  "version": "0.4.2",
+  "version": "0.4.3-rc1",
   "description": "Generates diograph from folder",
   "license": "MIT",
   "author": "Olli-Pekka Pohjola <op@diory.me>, Jouni Alanen <jouni@diory.me>",
@@ -15,7 +15,9 @@
     "prettier": "prettier --write .",
     "test": "jest --verbose",
     "test-watch": "jest --watch",
-    "prepare": "yarn test && yarn prettier && yarn build"
+    "prepare": "yarn test && yarn prettier && yarn build",
+    "release-candidate": "yarn prepare && yarn version --no-git-tag-version && npm publish",
+    "release": "yarn prepare && yarn version && npm publish"
   },
   "dependencies": {
     "@diograph/diograph": "0.4.3",

@@ -32,11 +32,13 @@ const getFolderDiories = async (
   client: IDataClient,
 ): Promise<IDiories> => {
   const diograph: IDiographObject = await getDiograph(rootUrl, folderPath, client)
+  // Validate diograph
   return Object.entries(diograph)
-    .filter(([key]) => key !== diograph['/'].id)
+    .filter(([key]) => key !== '/')
     .reduce((diories: IDiories, [key, dioryObject]: [string, IDioryObject]) => {
-      const path = join(folderPath, resolvePath(key, dioryObject))
-      diories[path] = key === '/' ? new Diory(diograph[dioryObject.id]) : new Diory(dioryObject)
+      const id = dioryObject.id === diograph['/'].id ? '/' : key
+      const path = join(folderPath, resolvePath(id, dioryObject))
+      diories[path] = new Diory(dioryObject)
       return diories
     }, {})
 }
