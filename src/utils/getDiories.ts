@@ -20,10 +20,21 @@ const getDiograph = async (
   return diograph
 }
 
-const resolvePath = (address: string, dioryObject: IDioryObject) => {
+const getRelativeContentDiories = (folderPath: string, dioryObject: IDioryObject): IDiories => {
   const { data = [] } = dioryObject
-  const { contentUrl = '' } = data.find(({ contentUrl }) => contentUrl) || {}
-  return contentUrl ? contentUrl : address
+  const updatedData = data.map(({ contentUrl, ...item }) => ({
+    contentUrl: contentUrl.startsWith('/') ? join(folderPath, contentUrl) : contentUrl,
+    ...item,
+  }))
+
+  return data
+    .map(({ contentUrl }) => contentUrl)
+    .filter((contentUrl) => contentUrl && contentUrl.startsWith('/'))
+    .reduce((diories: IDiories, contentUrl: string) => {
+      const path = join(folderPath, contentUrl)
+      diories[path] = new Diory({ ...dioryObject, data: updatedData })
+      return diories
+    }, {})
 }
 
 const getFolderDiories = async (
@@ -36,9 +47,15 @@ const getFolderDiories = async (
   return Object.entries(diograph)
     .filter(([key]) => key !== '/')
     .reduce((diories: IDiories, [key, dioryObject]: [string, IDioryObject]) => {
-      const id = dioryObject.id === diograph['/'].id ? '/' : key
-      const path = join(folderPath, resolvePath(id, dioryObject))
-      diories[path] = new Diory(dioryObject)
+      const contentDiories = getRelativeContentDiories(folderPath, dioryObject)
+      Object.assign(diories, contentDiories)
+
+      if (!Object.keys(contentDiories).length) {
+        const id = dioryObject.id === diograph['/'].id ? '/' : key
+        const path = join(folderPath, id)
+        Object.assign(diories, { [path]: new Diory(dioryObject) })
+      }
+
       return diories
     }, {})
 }

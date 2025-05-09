@@ -6,5 +6,5 @@ export function generateFolderDiory(rootUrl: string, path: string, client: IData
   const folderUrl = join(rootUrl, path)
   const { name, created, modified } = client.getMetadata(folderUrl)
 
-  return new Diory({ text: name, date: created, created, modified })
+  return new Diory({ text: name, created, modified })
 }

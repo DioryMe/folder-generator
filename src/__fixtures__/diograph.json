@@ -79,6 +79,9 @@
       },
       {
         "id": "old-diory-id-4"
+      },
+      {
+        "id": "old-diory-id-5"
       }
     ],
     "created": "2022-01-01T00:00:00.000Z",
@@ -88,7 +91,6 @@
     "id": "new-folder-uuid",
     "text": "example-folder",
     "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
-    "date": "2022-01-01T00:00:00.000Z",
     "links": [
       {
         "id": "new-diory-id-0"
@@ -112,11 +114,17 @@
     "created": "2022-01-01T00:00:00.000Z",
     "modified": "2023-01-01T00:00:00.000Z"
   },
+  "old-diory-id-5": {
+    "id": "old-diory-id-5",
+    "text": "non content",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
   "old-diory-id-4": {
     "id": "old-diory-id-4",
     "data": [
       {
-        "contentUrl": "/some-image.jpg"
+        "contentUrl": "/old-folder/some-image.jpg"
       }
     ],
     "created": "2022-01-01T00:00:00.000Z",
@@ -126,7 +134,7 @@
     "id": "old-diory-id-3",
     "data": [
       {
-        "contentUrl": "/some-document.pdf"
+        "contentUrl": "/old-folder/some-document.pdf"
       }
     ],
     "created": "2022-01-01T00:00:00.000Z",
@@ -136,7 +144,7 @@
     "id": "old-diory-id-2",
     "data": [
       {
-        "contentUrl": "/some-document.odt"
+        "contentUrl": "/old-folder/some-document.odt"
       }
     ],
     "created": "2022-01-01T00:00:00.000Z",
@@ -146,7 +154,7 @@
     "id": "old-diory-id-1",
     "data": [
       {
-        "contentUrl": "/some-document.docx"
+        "contentUrl": "/old-folder/some-document.docx"
       }
     ],
     "created": "2022-01-01T00:00:00.000Z",
@@ -156,7 +164,7 @@
     "id": "old-diory-id-0",
     "data": [
       {
-        "contentUrl": "/image-with-24-hour.jpg"
+        "contentUrl": "/old-folder/image-with-24-hour.jpg"
       }
     ],
     "created": "2022-01-01T00:00:00.000Z",

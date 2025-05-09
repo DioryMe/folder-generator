@@ -24,7 +24,11 @@ export const generateDiograph = async (
   const diograph = convertToDiograph(diories)
 
   if (options?.saveDiograph) {
-    await client.writeItem(rootUrl, diograph.toJson())
+    try {
+      await client.writeItem(rootUrl, diograph.toJson())
+    } catch (error) {
+      console.error('Unable to saveDiograph', rootUrl, error)
+    }
   }
 
   return diograph.toObject()

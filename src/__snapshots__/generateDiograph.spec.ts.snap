@@ -93,7 +93,6 @@ Object {
   },
   "new-folder-uuid": Object {
     "created": "2022-01-01T00:00:00.000Z",
-    "date": "2022-01-01T00:00:00.000Z",
     "id": "new-folder-uuid",
     "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
     "links": Array [

@@ -68,6 +68,9 @@ describe('getDiories', () => {
               Object {
                 "id": "old-diory-id-4",
               },
+              Object {
+                "id": "old-diory-id-5",
+              },
             ],
             "modified": "2022-01-01T00:00:00.000Z",
             "text": "old-folder",
@@ -80,7 +83,7 @@ describe('getDiories', () => {
             "created": "2022-01-01T00:00:00.000Z",
             "data": Array [
               Object {
-                "contentUrl": "/image-with-24-hour.jpg",
+                "contentUrl": "/old-folder/image-with-24-hour.jpg",
               },
             ],
             "date": undefined,
@@ -94,12 +97,27 @@ describe('getDiories', () => {
             "toObject": [Function],
             "update": [Function],
           },
+          "/old-folder/old-diory-id-5": Diory {
+            "callback": [Function],
+            "created": "2022-01-01T00:00:00.000Z",
+            "data": undefined,
+            "date": undefined,
+            "id": "old-diory-id-5",
+            "image": undefined,
+            "latlng": undefined,
+            "links": undefined,
+            "modified": "2022-01-01T00:00:00.000Z",
+            "text": "non content",
+            "toJson": [Function],
+            "toObject": [Function],
+            "update": [Function],
+          },
           "/old-folder/some-document.docx": Diory {
             "callback": [Function],
             "created": "2022-01-01T00:00:00.000Z",
             "data": Array [
               Object {
-                "contentUrl": "/some-document.docx",
+                "contentUrl": "/old-folder/some-document.docx",
               },
             ],
             "date": undefined,
@@ -118,7 +136,7 @@ describe('getDiories', () => {
             "created": "2022-01-01T00:00:00.000Z",
             "data": Array [
               Object {
-                "contentUrl": "/some-document.odt",
+                "contentUrl": "/old-folder/some-document.odt",
               },
             ],
             "date": undefined,
@@ -137,7 +155,7 @@ describe('getDiories', () => {
             "created": "2022-01-01T00:00:00.000Z",
             "data": Array [
               Object {
-                "contentUrl": "/some-document.pdf",
+                "contentUrl": "/old-folder/some-document.pdf",
               },
             ],
             "date": undefined,
@@ -156,7 +174,7 @@ describe('getDiories', () => {
             "created": "2022-01-01T00:00:00.000Z",
             "data": Array [
               Object {
-                "contentUrl": "/some-image.jpg",
+                "contentUrl": "/old-folder/some-image.jpg",
               },
             ],
             "date": undefined,
