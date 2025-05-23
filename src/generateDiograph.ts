@@ -1,11 +1,15 @@
+import { join } from 'path-browserify'
 import { IDataClient } from '@diory/types'
-import { IDiographObject } from '@diograph/diograph'
-import { GenerateDiographOptions, IFolderPath } from './types'
+import { IDiograph, IDiographObject } from '@diograph/diograph'
+import { GenerateDiographOptions, IDiories, IFolderPath } from './types'
 
 import { generateDiories } from './generateDiories/generateDiories'
 
 import { getFolderPaths } from './utils/getFolderPaths'
 import { convertToDiograph } from './utils/convertToDiograph'
+import { getDiories } from './utils/getDiories'
+
+const DIOGRAPH_JSON = 'diograph.json'
 
 export const generateDiograph = async (
   rootUrl: string,
@@ -20,12 +24,13 @@ export const generateDiograph = async (
     options?.level,
   )
 
-  const diories = await generateDiories(rootUrl, folderPaths, client)
-  const diograph = convertToDiograph(diories)
+  const oldDiories: IDiories = await getDiories(rootUrl, folderPaths, client)
+  const diories: IDiories = await generateDiories(rootUrl, folderPaths, oldDiories, client)
+  const diograph: IDiograph = convertToDiograph(diories)
 
   if (options?.saveDiograph) {
     try {
-      await client.writeItem(rootUrl, diograph.toJson())
+      await client.writeItem(join(rootUrl, DIOGRAPH_JSON), diograph.toJson())
     } catch (error) {
       console.error('Unable to saveDiograph', rootUrl, error)
     }

@@ -62,8 +62,8 @@ const getFolderDiories = async (
 
 export const getDiories = async (
   rootUrl: string,
-  client: IDataClient,
   folderPaths: IFolderPath[],
+  client: IDataClient,
 ): Promise<IDiories> => {
   const diories: IDiories = {}
   await Promise.all(

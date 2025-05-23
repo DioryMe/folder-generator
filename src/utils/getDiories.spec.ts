@@ -9,7 +9,7 @@ describe('getDiories', () => {
     it('returns all subfolder paths with file and subfolder names', async () => {
       const folderPath = join(__dirname, '../__fixtures__/example-folder')
 
-      const diories = await getDiories(folderPath, new LocalClient(), folderPathsFixture)
+      const diories = await getDiories(folderPath, folderPathsFixture, new LocalClient())
 
       expect(diories).toMatchInlineSnapshot(`
         Object {
@@ -253,7 +253,7 @@ describe('getDiories', () => {
       it('returns root folder paths with file and subfolder names', async () => {
         const folderPath = join(__dirname, '../__fixtures__/example-folder')
 
-        const diories = await getDiories(folderPath, new LocalClient(), [folderPathsFixture[2]])
+        const diories = await getDiories(folderPath, [folderPathsFixture[2]], new LocalClient())
 
         expect(diories).toMatchInlineSnapshot(`
           Object {

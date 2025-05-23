@@ -2,7 +2,7 @@ import { join } from 'path-browserify'
 import { Diory } from '@diograph/diograph'
 import { v4 } from 'uuid'
 
-import { mockDataClient } from './testUtils'
+import { mockDataClient } from './utils/testUtils'
 
 import { generateDiograph } from './generateDiograph'
 import * as allDiographJson from './__fixtures__/diograph.json'
