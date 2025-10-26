@@ -28,6 +28,7 @@ export const generateDiograph = async (
   const diories: IDiories = await generateDiories(rootUrl, folderPaths, oldDiories, client)
   const diograph: IDiograph = convertToDiograph(diories)
 
+  // TODO: How not to add deleted diories / links
   if (options?.saveDiograph) {
     try {
       await client.writeItem(join(rootUrl, DIOGRAPH_JSON), diograph.toJson())

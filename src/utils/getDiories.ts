@@ -9,15 +9,14 @@ const getDiograph = async (
   folderPath: string,
   client: IDataClient,
 ): Promise<IDiographObject> => {
-  const folderUrl = join(rootUrl, folderPath, 'diograph.json')
-  let diograph: IDiographObject = {}
   try {
+    const folderUrl = join(rootUrl, folderPath, 'diograph.json')
     const diographString = await client.readTextItem(folderUrl)
-    diograph = JSON.parse(diographString)
+    return JSON.parse(diographString)
   } catch (error) {
     // diories.json not found
+    return {}
   }
-  return diograph
 }
 
 const getRelativeContentDiories = (folderPath: string, dioryObject: IDioryObject): IDiories => {
@@ -67,7 +66,7 @@ export const getDiories = async (
 ): Promise<IDiories> => {
   const diories: IDiories = {}
   await Promise.all(
-    folderPaths.map(async ({ path, subfolderNames }) => {
+    folderPaths.map(async ({ path }) => {
       const folderDiories = await getFolderDiories(rootUrl, path, client)
       Object.assign(diories, folderDiories) // Parent before children
       return

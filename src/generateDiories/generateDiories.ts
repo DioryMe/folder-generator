@@ -14,15 +14,19 @@ export const generateDiories = async (
   oldDiories: IDiories,
   client: IDataClient,
 ): Promise<IDiories> => {
+  console.info('Old diories', oldDiories)
+
   const newFilePaths: IFolderPath[] = getNewFilePaths(folderPaths, oldDiories)
   const newFileDiories: IDiories = await generateFileDiories(rootUrl, client, newFilePaths)
 
   const newFolderPaths: IFolderPath[] = getNewFolderPaths(folderPaths, oldDiories)
-  const newFolderDiories: IDiories = await generateFolderDiories(rootUrl, client, newFolderPaths)
+  const newFolderDiories: IDiories = generateFolderDiories(rootUrl, client, newFolderPaths)
+  console.log('New diories', newFileDiories, newFolderDiories)
 
   const diories = { ...newFileDiories, ...newFolderDiories, ...oldDiories }
 
   updateFolderDiories(diories, folderPaths)
+  console.info('Updated diories', diories)
 
   return diories
 }
