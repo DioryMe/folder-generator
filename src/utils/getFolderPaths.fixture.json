@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/new-folder/",
+    "fileNames": [
+      "image-with-24-hour.jpg",
+      "some-document.docx",
+      "some-document.odt",
+      "some-document.pdf",
+      "some-image.jpg",
+      "some-sub-folder-image.jpg"
+    ],
+    "subfolderNames": []
+  },
+  {
+    "path": "/old-folder/",
+    "fileNames": [
+      "image-with-24-hour.jpg",
+      "some-document.docx",
+      "some-document.odt",
+      "some-document.pdf",
+      "some-image.jpg"
+    ],
+    "subfolderNames": []
+  },
+  {
+    "path": "/",
+    "fileNames": ["some-music.mp3", "some-text.txt", "some-video.mp4"],
+    "subfolderNames": ["new-folder", "old-folder"]
+  }
+]

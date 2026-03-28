@@ -1,0 +1,91 @@
+{
+  "old-folder-uuid": {
+    "id": "old-folder-uuid",
+    "text": "old-folder",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "date": "2022-01-01T00:00:00.000Z",
+    "links": [
+      {
+        "id": "old-diory-id-0"
+      },
+      {
+        "id": "old-diory-id-1"
+      },
+      {
+        "id": "old-diory-id-2"
+      },
+      {
+        "id": "old-diory-id-3"
+      },
+      {
+        "id": "old-diory-id-4"
+      },
+      {
+        "id": "old-diory-id-5"
+      }
+    ],
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "/": {
+    "id": "old-folder-uuid",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "old-diory-id-0": {
+    "id": "old-diory-id-0",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [
+      {
+        "contentUrl": "/image-with-24-hour.jpg"
+      }
+    ]
+  },
+  "old-diory-id-1": {
+    "id": "old-diory-id-1",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [
+      {
+        "contentUrl": "/some-document.docx"
+      }
+    ]
+  },
+  "old-diory-id-2": {
+    "id": "old-diory-id-2",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [
+      {
+        "contentUrl": "/some-document.odt"
+      }
+    ]
+  },
+  "old-diory-id-3": {
+    "id": "old-diory-id-3",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [
+      {
+        "contentUrl": "/some-document.pdf"
+      }
+    ]
+  },
+  "old-diory-id-4": {
+    "id": "old-diory-id-4",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [
+      {
+        "contentUrl": "/some-image.jpg"
+      }
+    ]
+  },
+  "old-diory-id-5": {
+    "id": "old-diory-id-5",
+    "text": "non content",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z"
+  }
+}

@@ -3,7 +3,7 @@ import { IDiory } from '@diograph/diograph'
 export interface IFolderPath {
   path: string
   fileNames: string[]
-  subFolderNames?: string[]
+  subfolderNames: string[]
 }
 
 export interface IPaths {
@@ -12,4 +12,10 @@ export interface IPaths {
 
 export interface IDiories {
   [path: string]: IDiory
+}
+
+export interface GenerateDiographOptions {
+  level?: number
+  saveDiograph?: boolean
+  excludedPaths?: string[]
 }

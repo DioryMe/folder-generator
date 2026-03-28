@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateDiograph given folder path generates diograph and paths from new folder files and subfolders 1`] = `
+Object {
+  "/": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "new-folder-uuid",
+    "modified": "2023-01-01T00:00:00.000Z",
+  },
+  "new-diory-id-0": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/image-with-24-hour.jpg",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-0",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
+  },
+  "new-diory-id-1": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-document.docx",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-1",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
+  },
+  "new-diory-id-2": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-document.odt",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-2",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
+  },
+  "new-diory-id-3": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-document.pdf",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-3",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
+  },
+  "new-diory-id-4": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-image.jpg",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-4",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
+  },
+  "new-diory-id-5": Object {
+    "created": "2023-01-01T00:00:00.000Z",
+    "data": Array [
+      Object {
+        "@context": "some-schema",
+        "@type": "some-type",
+        "contentUrl": "/some-sub-folder-image.jpg",
+        "encodingFormat": "some-encodingFormat",
+      },
+    ],
+    "id": "new-diory-id-5",
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new",
+  },
+  "new-folder-uuid": Object {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "new-folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": Array [
+      Object {
+        "id": "new-diory-id-0",
+      },
+      Object {
+        "id": "new-diory-id-1",
+      },
+      Object {
+        "id": "new-diory-id-2",
+      },
+      Object {
+        "id": "new-diory-id-3",
+      },
+      Object {
+        "id": "new-diory-id-4",
+      },
+      Object {
+        "id": "new-diory-id-5",
+      },
+    ],
+    "modified": "2023-01-01T00:00:00.000Z",
+    "text": "new-folder",
+  },
+}
+`;

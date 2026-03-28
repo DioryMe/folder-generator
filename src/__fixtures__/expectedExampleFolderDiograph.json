@@ -1,0 +1,88 @@
+{
+  "/": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "/old-folder/": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "/new-folder/": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
+  "folder-uuid": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "date": "2022-01-01T00:00:00.000Z",
+    "id": "folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": [
+      {
+        "id": "old-folder-uuid"
+      },
+      {
+        "id": "new-folder-uuid"
+      },
+      {
+        "id": "example-diory-id-0"
+      },
+      {
+        "id": "example-diory-id-1"
+      },
+      {
+        "id": "example-diory-id-2"
+      }
+    ],
+    "modified": "2022-01-01T00:00:00.000Z",
+    "text": "example-folder"
+  },
+  "old-folder-uuid": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "date": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMPvD6PwAGiwMHcHyXEAAAAABJRU5ErkJggg==",
+    "links": [
+      { "id": "old-diory-id-0" },
+      { "id": "old-diory-id-1" },
+      { "id": "old-diory-id-2" },
+      { "id": "old-diory-id-3" },
+      { "id": "old-diory-id-4" },
+      { "id": "old-diory-id-5" }
+    ],
+    "modified": "2022-01-01T00:00:00.000Z",
+    "text": "old-folder"
+  },
+  "example-diory-id-0": {
+    "id": "example-diory-id-0",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [
+      {
+        "contentUrl": "/some-music.mp3"
+      }
+    ]
+  },
+  "example-diory-id-1": {
+    "id": "example-diory-id-1",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [
+      {
+        "contentUrl": "/some-text.txt"
+      }
+    ]
+  },
+  "example-diory-id-2": {
+    "id": "example-diory-id-2",
+    "created": "2022-01-01T00:00:00.000Z",
+    "modified": "2022-01-01T00:00:00.000Z",
+    "data": [
+      {
+        "contentUrl": "/some-video.mp4"
+      }
+    ]
+  }
+}

@@ -1,22 +1,41 @@
-import { IDiograph } from '@diograph/diograph'
-import { IDataClient } from '@diograph/local-client'
+import { join } from 'path-browserify'
+import { IDataClient } from '@diory/types'
+import { IDiograph, IDiographObject } from '@diograph/diograph'
+import { GenerateDiographOptions, IDiories, IFolderPath } from './types'
 
-import { IDiories, IFolderPath, IPaths } from './types'
+import { generateDiories } from './generateDiories/generateDiories'
 
 import { getFolderPaths } from './utils/getFolderPaths'
-import { generateDiories } from './utils/generateDiories'
-import { updateFolderDiories } from './utils/updateFolderDiories'
-import { convertToDiographAndPaths } from './utils/convertToDiographAndPaths'
+import { convertToDiograph } from './utils/convertToDiograph'
+import { getOldDiories } from './utils/getOldDiories'
+
+const DIOGRAPH_JSON = 'diograph.json'
 
 export const generateDiograph = async (
-  rootPath: string,
+  rootUrl: string,
+  folderPath: string,
   client: IDataClient,
-): Promise<{ diograph: IDiograph; paths: IPaths }> => {
-  const folderPaths: IFolderPath[] = await getFolderPaths(rootPath, '/', client)
-  console.info('Generating diories from folders', folderPaths)
-  const diories: IDiories = await generateDiories(rootPath, folderPaths, client)
+  options?: GenerateDiographOptions,
+): Promise<IDiographObject> => {
+  const folderPaths: IFolderPath[] = await getFolderPaths(
+    rootUrl,
+    folderPath,
+    client,
+    options?.level,
+  )
 
-  updateFolderDiories(diories, folderPaths)
+  const oldDiories: IDiories = await getOldDiories(rootUrl, folderPaths, client)
+  const diories: IDiories = await generateDiories(rootUrl, folderPaths, oldDiories, client)
+  const diograph: IDiograph = convertToDiograph(diories)
 
-  return convertToDiographAndPaths(diories)
+  // TODO: How not to add deleted diories / links
+  if (options?.saveDiograph) {
+    try {
+      await client.writeItem(join(rootUrl, DIOGRAPH_JSON), diograph.toJson())
+    } catch (error) {
+      console.error('Unable to saveDiograph', rootUrl, error)
+    }
+  }
+
+  return diograph.toObject()
 }

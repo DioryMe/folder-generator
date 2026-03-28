@@ -9,5 +9,7 @@ export const mockDataClient = (name: string, created: string, modified: string) 
     modified: new Date(modified).toISOString(),
   }))
 
+  jest.spyOn(client, 'writeItem').mockResolvedValue(true)
+
   return client
 }
