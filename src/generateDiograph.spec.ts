@@ -1,15 +1,19 @@
 import { join } from 'path-browserify'
 import { Diory } from '@diograph/diograph'
-import { v4 } from 'uuid'
 
 import { mockDataClient } from './utils/testUtils'
 
 import { generateDiograph } from './generateDiograph'
-import * as allDiographJson from './__fixtures__/diograph.json'
 import * as exampleDiographJson from './__fixtures__/example-folder/diograph.json'
 import * as oldDiographJson from './__fixtures__/example-folder/old-folder/diograph.json'
 
+import * as expectedDiographJson from './__fixtures__/expectedDiographAll.json'
+
 // Mocks
+jest.mock('uuid', () => ({
+  v4: jest.fn().mockReturnValue('new-folder-uuid'),
+}))
+
 let dioryId = 0
 function generateMockId(prefix: string) {
   return `${prefix}-${dioryId++}`
@@ -31,10 +35,6 @@ jest.mock('@diograph/file-generator', () => ({
         ],
       }),
     ),
-}))
-
-jest.mock('uuid', () => ({
-  v4: jest.fn().mockReturnValue('new-folder-uuid'),
 }))
 
 describe('generateDiograph', () => {
@@ -61,7 +61,7 @@ describe('generateDiograph', () => {
         { saveDiograph: true, level: 10 },
       )
 
-      expect(diograph).toEqual(allDiographJson)
+      expect(diograph).toEqual(expectedDiographJson)
     })
 
     it('generates diograph from example folder files and subfolders', async () => {

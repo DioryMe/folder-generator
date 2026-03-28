@@ -6,8 +6,8 @@ export const convertToDiograph = (diories: IDiories): IDiograph => {
   Object.entries(diories)
     .reverse()
     .forEach(([path, diory]) => {
-      const rootPathOnly = path === '/' ? '/' : undefined
-      diograph.addDiory(diory, rootPathOnly)
+      const pathForPathDiory = path.endsWith('/') ? path : undefined
+      diograph.addDiory(diory, pathForPathDiory)
     })
   return diograph
 }

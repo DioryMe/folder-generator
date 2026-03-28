@@ -5,10 +5,7 @@ import { updateFolderDiory } from './folderDiory'
 
 const getLinkedDiories = (rootPath: string, names: string[], diories: IDiories) =>
   names
-    .map((name) => {
-      const path = join(rootPath, name)
-      return diories[path] || { id: `/${name}/` }
-    })
+    .map((name) => diories[join(rootPath, name) + '/'] || diories[join(rootPath, name)])
     .filter(Boolean)
 
 export const updateFolderDiories = (diories: IDiories, folderPaths: IFolderPath[]): void => {

@@ -9,6 +9,11 @@
     "id": "old-folder-uuid",
     "modified": "2022-01-01T00:00:00.000Z"
   },
+  "/new-folder/": {
+    "created": "2022-01-01T00:00:00.000Z",
+    "id": "old-folder-uuid",
+    "modified": "2022-01-01T00:00:00.000Z"
+  },
   "folder-uuid": {
     "created": "2022-01-01T00:00:00.000Z",
     "date": "2022-01-01T00:00:00.000Z",
@@ -17,6 +22,9 @@
     "links": [
       {
         "id": "old-folder-uuid"
+      },
+      {
+        "id": "new-folder-uuid"
       },
       {
         "id": "example-diory-id-0"

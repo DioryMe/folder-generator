@@ -7,7 +7,7 @@ import { generateDiories } from './generateDiories/generateDiories'
 
 import { getFolderPaths } from './utils/getFolderPaths'
 import { convertToDiograph } from './utils/convertToDiograph'
-import { getDiories } from './utils/getDiories'
+import { getOldDiories } from './utils/getOldDiories'
 
 const DIOGRAPH_JSON = 'diograph.json'
 
@@ -24,7 +24,7 @@ export const generateDiograph = async (
     options?.level,
   )
 
-  const oldDiories: IDiories = await getDiories(rootUrl, folderPaths, client)
+  const oldDiories: IDiories = await getOldDiories(rootUrl, folderPaths, client)
   const diories: IDiories = await generateDiories(rootUrl, folderPaths, oldDiories, client)
   const diograph: IDiograph = convertToDiograph(diories)
 
